@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css' />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header container">
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" />
+            </a>
+            <a href="#" class="login-link" data-toggle="modal" data-target="#LoginModal">
+                Log in
+            </a>
+            <!-- <a href="profile.html" class="profile">
+                <img src="images/profile.png" />
+            </a> -->
+        </header>
+        <main>
+            <section class="banner">
+                <div class="banner-slider">
+                    <div class="slider-item">
+                        <img src="images/banner-image.jpg" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="images/banner-image.jpg" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="images/banner-image.jpg" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="images/banner-image.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="want-to-repair">
+                <div class="container product-wrapper">
+                    <h2>I Want to Repair My</h2>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <span class="img-wrapper">
+                                <img src="images/category-laptop.png" />
+                            </span>
+                            <h3>Laptop</h3>
+                        </div>
+                        <div class="product-item">
+                            <span class="img-wrapper">
+                                <img src="images/category-desktop.png" />
+                            </span>
+                            <h3>Desktop</h3>
+                        </div>
+                        <div class="product-item">
+                            <span class="img-wrapper">
+                                <img src="images/category-allinone.png" />
+                            </span>
+                            <h3>All in One</h3>
+                        </div>
+                        <div class="product-item">
+                            <span class="img-wrapper">
+                                <img src="images/category-workstation.png" />
+                            </span>
+                            <h3>Workstation</h3>
+                        </div>
+                        <div class="product-item">
+                            <span class="img-wrapper">
+                                <img src="images/category-macbook.png" />
+                            </span>
+                            <h3>MacBook</h3>
+                        </div>
+                        <div class="product-item">
+                            <span class="img-wrapper">
+                                <img src="images/category-iMac.png" />
+                            </span>
+                            <h3>iMac</h3>
+                        </div>
+                        <div class="product-item">
+                            <span class="img-wrapper">
+                                <img src="images/category-Macmini.png" />
+                            </span>
+                            <h3>Mac mini</h3>
+                        </div>
+                        <div class="product-item">
+                            <span class="img-wrapper">
+                                <img src="images/category-printer.png" />
+                            </span>
+                            <h3>Printer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container brand-wrapper">
+                    <h2>Select Your Brand</h2>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <a href="issue-selection.html" class="img-wrapper">
+                                <img src="images/Dell.svg" />
+                            </a>
+                            <h3>Dell</h3>
+                        </div>
+                        <div class="product-item">
+                            <a href="issue-selection.html" class="img-wrapper">
+                                <img src="images/HP.svg" />
+                            </a>
+                            <h3>HP</h3>
+                        </div>
+                        <div class="product-item">
+                            <a href="issue-selection.html" class="img-wrapper">
+                                <img src="images/lenovo.svg" />
+                            </a>
+                            <h3>Lenovo</h3>
+                        </div>
+                        <div class="product-item">
+                            <a href="issue-selection.html" class="img-wrapper">
+                                <img src="images/Acer.svg" />
+                            </a>
+                            <h3>Acer</h3>
+                        </div>
+                        <div class="product-item">
+                            <a href="issue-selection.html" class="img-wrapper">
+                                <img src="images/asus.svg" />
+                            </a>
+                            <h3>Asus</h3>
+                        </div>
+                        <div class="product-item">
+                            <a href="issue-selection.html" class="img-wrapper">
+                                <img src="images/msi.svg" />
+                            </a>
+                            <h3>MSI</h3>
+                        </div>
+                        <div class="product-item">
+                            <a href="issue-selection.html" class="img-wrapper">
+                                <img src="images/MI.svg" />
+                            </a>
+                            <h3>MI</h3>
+                        </div>
+                        <div class="product-item">
+                            <a href="issue-selection.html" class="img-wrapper">
+                                <!-- <img src="images/category-printer.png" /> -->
+                            </a>
+                            <h3>More</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="go-green">
+                <div class="container">
+                    <div class="head-blk">
+                        <h2>Subscribe to Go Green Service</h2>
+                    </div>
+                    <ul class="filter-wrapper nav nav-tabs" role="tablist">
+                        <li class="nav-item"><a href="#Laptop" role="tab" data-toggle="tab" class="nav-link active">Laptop</a></li>
+                        <li class="nav-item"><a href="#Desktop" role="tab" data-toggle="tab" class="nav-link">Desktop</a></li>
+                        <li class="nav-item"><a href="#AllinOne" role="tab" data-toggle="tab" class="nav-link">All in One</a></li>
+                        <li class="nav-item"><a href="#Workstation" role="tab" data-toggle="tab" class="nav-link">Workstation</a></li>
+                        <li class="nav-item"><a href="#MacBook" role="tab" data-toggle="tab" class="nav-link">MacBook</a></li>
+                        <li class="nav-item"><a href="#iMac" role="tab" data-toggle="tab" class="nav-link">iMac</a></li>
+                        <li class="nav-item"><a href="#Macmini" role="tab" data-toggle="tab" class="nav-link">Mac mini</a></li>
+                        <li class="nav-item"><a href="#Printer" role="tab" data-toggle="tab" class="nav-link">Printer</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Laptop" role="tabpanel">
+                            <div class="offer-wrapper">
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Basic</h2>
+                                        <div class="price"><span>&#8377;</span>1500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper premium">
+                                    <div class="offer-inner">
+                                        <span class="badge">Popular</span>
+                                        <h2>Premium</h2>
+                                        <div class="price"><span>&#8377;</span>2000<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Enterprise</h2>
+                                        <div class="price"><span>&#8377;</span>2500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Desktop" role="tabpanel">
+                            <div class="offer-wrapper">
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Basic</h2>
+                                        <div class="price"><span>&#8377;</span>1500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper premium">
+                                    <div class="offer-inner">
+                                        <span class="badge">Popular</span>
+                                        <h2>Premium</h2>
+                                        <div class="price"><span>&#8377;</span>2000<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Enterprise</h2>
+                                        <div class="price"><span>&#8377;</span>2500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="AllinOne" role="tabpanel">
+                            <div class="offer-wrapper">
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Basic</h2>
+                                        <div class="price"><span>&#8377;</span>1500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper premium">
+                                    <div class="offer-inner">
+                                        <span class="badge">Popular</span>
+                                        <h2>Premium</h2>
+                                        <div class="price"><span>&#8377;</span>2000<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Enterprise</h2>
+                                        <div class="price"><span>&#8377;</span>2500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Workstation" role="tabpanel">
+                            <div class="offer-wrapper">
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Basic</h2>
+                                        <div class="price"><span>&#8377;</span>1500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper premium">
+                                    <div class="offer-inner">
+                                        <span class="badge">Popular</span>
+                                        <h2>Premium</h2>
+                                        <div class="price"><span>&#8377;</span>2000<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Enterprise</h2>
+                                        <div class="price"><span>&#8377;</span>2500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="MacBook" role="tabpanel">
+                            <div class="offer-wrapper">
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Basic</h2>
+                                        <div class="price"><span>&#8377;</span>1500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper premium">
+                                    <div class="offer-inner">
+                                        <span class="badge">Popular</span>
+                                        <h2>Premium</h2>
+                                        <div class="price"><span>&#8377;</span>2000<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Enterprise</h2>
+                                        <div class="price"><span>&#8377;</span>2500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="iMac" role="tabpanel">
+                            <div class="offer-wrapper">
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Basic</h2>
+                                        <div class="price"><span>&#8377;</span>1500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper premium">
+                                    <div class="offer-inner">
+                                        <span class="badge">Popular</span>
+                                        <h2>Premium</h2>
+                                        <div class="price"><span>&#8377;</span>2000<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Enterprise</h2>
+                                        <div class="price"><span>&#8377;</span>2500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Macmini" role="tabpanel">
+                            <div class="offer-wrapper">
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Basic</h2>
+                                        <div class="price"><span>&#8377;</span>1500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper premium">
+                                    <div class="offer-inner">
+                                        <span class="badge">Popular</span>
+                                        <h2>Premium</h2>
+                                        <div class="price"><span>&#8377;</span>2000<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Enterprise</h2>
+                                        <div class="price"><span>&#8377;</span>2500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Printer" role="tabpanel">
+                            <div class="offer-wrapper">
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Basic</h2>
+                                        <div class="price"><span>&#8377;</span>1500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper premium">
+                                    <div class="offer-inner">
+                                        <span class="badge">Popular</span>
+                                        <h2>Premium</h2>
+                                        <div class="price"><span>&#8377;</span>2000<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                                <div class="offer-inner-wrapper">
+                                    <div class="offer-inner">
+                                        <h2>Enterprise</h2>
+                                        <div class="price"><span>&#8377;</span>2500<sub>/-</sub></div>
+                                        <ul>
+                                            <li>OS & Software Optimization</li>
+                                            <li>Annual Computer Check-up</li>
+                                            <li>Hardware Maintenance</li>
+                                            <li>Unlimited Remote Support</li>
+                                            <li>Hardware Collection</li>
+                                            <li>Preventive Maintenance</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-basic"><span>Buy Now</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="book-with-us">
+                <div class="container">
+                    <div class="head-blk">
+                        <h2>Why book with us?</h2>
+                    </div>
+                    <div class="wrapper">
+                        <div class="left">
+                            <div class="book-item">
+                                <div class="title">
+                                    <h2>Expert Technicians</h2>
+                                </div>
+                                <div class="text-blk">
+                                    <p>Our technicians have years of experience and are trained to diagnose and resolve computer problems swiftly and accurately.</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="title">
+                                    <h2>Fast Turnaround Time</h2>
+                                </div>
+                                <div class="text-blk">
+                                    <p>We understand the importance of your time, which is why we strive to provide quick repairs without compromising on quality</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="title">
+                                    <h2>Expert Technicians</h2>
+                                </div>
+                                <div class="text-blk">
+                                    <p>Our technicians have years of experience and are trained to diagnose and resolve computer problems swiftly and accurately.</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="title">
+                                    <h2>Expert Technicians</h2>
+                                </div>
+                                <div class="text-blk">
+                                    <p>Our technicians have years of experience and are trained to diagnose and resolve computer problems swiftly and accurately.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="images/book-with-us.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial" style="background-image: url(images/testimonial-bg.png);">
+                <div class="container">
+                    <div class="head-blk">
+                        <h2>What People Say !!! </h2>
+                    </div>
+                    <div class="testimonial-slider">
+                        <div class="slider-item">
+                            <div class="author">
+                                <div class="profile">
+                                    <img src="images/profile.png">
+                                </div>
+                                <div class="profile-title">
+                                    <h5>Priyaka Chopda</h5>
+                                    <img src="images/five-star.png">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Borem ipsum dolor sit amet, consectetur adipiscing.Borem Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Borem ipsum dolor sit amet, consectetur adipiscing.Borem</p>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="author">
+                                <div class="profile">
+                                    <img src="images/profile.png">
+                                </div>
+                                <div class="profile-title">
+                                    <h5>Priyaka Chopda</h5>
+                                    <img src="images/five-star.png">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Borem ipsum dolor sit amet, consectetur adipiscing.Borem</p>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="author">
+                                <div class="profile">
+                                    <img src="images/profile.png">
+                                </div>
+                                <div class="profile-title">
+                                    <h5>Priyaka Chopda</h5>
+                                    <img src="images/five-star.png">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Borem ipsum dolor sit amet, consectetur adipiscing.Borem</p>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="author">
+                                <div class="profile">
+                                    <img src="images/profile.png">
+                                </div>
+                                <div class="profile-title">
+                                    <h5>Priyaka Chopda</h5>
+                                    <img src="images/five-star.png">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Borem ipsum dolor sit amet, consectetur adipiscing.Borem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- login modal -->
+            <div class="modal fade bd-example-modal-lg" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.71" d="M19.6337 12.6337L16.7675 15.5L19.6337 18.3663C20.1225 18.855 20.1225 19.645 19.6337 20.1337C19.39 20.3775 19.07 20.5 18.75 20.5C18.43 20.5 18.11 20.3775 17.8663 20.1337L15 17.2675L12.1337 20.1337C11.89 20.3775 11.57 20.5 11.25 20.5C10.93 20.5 10.61 20.3775 10.3663 20.1337C9.8775 19.645 9.8775 18.855 10.3663 18.3663L13.2325 15.5L10.3663 12.6337C9.8775 12.145 9.8775 11.355 10.3663 10.8663C10.855 10.3775 11.645 10.3775 12.1337 10.8663L15 13.7325L17.8663 10.8663C18.355 10.3775 19.145 10.3775 19.6337 10.8663C20.1225 11.355 20.1225 12.145 19.6337 12.6337ZM30 15.5C30 23.7712 23.2712 30.5 15 30.5C6.72875 30.5 0 23.7712 0 15.5C0 7.22875 6.72875 0.5 15 0.5C23.2712 0.5 30 7.22875 30 15.5ZM27.5 15.5C27.5 8.6075 21.8925 3 15 3C8.1075 3 2.5 8.6075 2.5 15.5C2.5 22.3925 8.1075 28 15 28C21.8925 28 27.5 22.3925 27.5 15.5Z" fill="#6F6F6F"/>
+                            </svg>
+                            </span>
+                        </button> -->
+                        <div class="modal-wrapper">
+                            <div class="login-wrapper">
+                                <div class="login-inner">
+                                    <h2>Hello,Welcome</h2>
+                                    <ul class="login-tabs nav nav-tabs" role="tablist">
+                                        <li class="nav-item"><a href="#Personal" role="tab" data-toggle="tab" class="nav-link active">                                            
+                                            Personal
+                                        </a></li>
+                                        <li class="nav-item"><a href="#Business" role="tab" data-toggle="tab" class="nav-link">Business</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="Personal" role="tabpanel">
+                                            <p>Please enter your mobile number to Continue</p>
+                                            <div class="form-group">
+                                                <span>+91</span>
+                                                <input type="text" class="form-control" name="mobile" placeholder="00000 00000"/>
+                                            </div>
+                                            <a href="#" class="btn btn-fill-black">
+                                                <span>Continue</span>
+                                            </a>
+                                            <p class="privacy-policy">By continuing, you agree to our
+                                                <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></p>
+                                        </div>
+                                        <div class="tab-pane" id="Business" role="tabpanel">
+                                            <p>Please enter your mobile number to Continue</p>
+                                            <div class="form-group">
+                                                <span>+91</span>
+                                                <input type="text" class="form-control" name="mobile" placeholder="00000 00000"/>
+                                            </div>
+                                            <a href="#" class="btn btn-fill-black">
+                                                <span>Continue</span>
+                                            </a>
+                                            <p class="privacy-policy">By continuing, you agree to our
+                                                <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="wrapper">
+                        <div class="left">
+                            <h4>General</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Go Green</a>
+                                </li>
+                                <li>
+                                    <a href="#">Partner With Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="center">
+                            <h4>Company</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Career</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <h4>Legal</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Partner Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms &amp; Condition</a>
+                                </li>
+                                <li>
+                                    <a href="#">Grievance & Redressal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="wrapper">                        
+                            <div class="logo">
+                                <img src="images/footer-logo.svg">
+                            </div>
+                            <div class="text">
+                                <p>© 2023 ukel | All rights reserved.</p>
+                            </div>
+                            <span class="line-left"></span>
+                            <div class="social-links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/ic_twiter.svg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/ic_facebook.svg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/ic_linkedin.svg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/ic_instagram.svg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+    <script src='js/custom.js'></script>
+</body>
+</html>
