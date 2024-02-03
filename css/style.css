@@ -127,6 +127,15 @@ h5{
     font-weight: 400;
     line-height: normal;
 }
+h6{
+    font-family: 'Basis Grotesque Arabic Pro Blk';
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
 .container{
     max-width: 1558px;
     padding: 0 20px;
@@ -138,6 +147,11 @@ h5{
     justify-content: space-between;
     padding: 20px;
     box-shadow: 0px 4px 4px 0px #00000040;
+}
+.header .header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .site-logo{
     height: 50px;
@@ -157,6 +171,9 @@ h5{
 }
 
 /* banner slider */
+.slick-dotted.slick-slider{
+    margin: 0;
+}
 .banner-slider .slider-item img{width: 100%;}
 .banner-slider .slick-dots {
     bottom: 10px;
@@ -216,13 +233,17 @@ h5{
 .product-list .img-wrapper{
     background-color: #EBEBEB;
     height: 150px;
-    min-width: 100px;
-    max-width: 150px;
+    width: 150px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
     padding: 18px;
+}
+.product-list .img-wrapper img{
+    /* width: 100%; */
+    object-fit: cover;
+    /* height: 100%; */
 }
 .product-list h3{
     text-align: center;
@@ -436,7 +457,7 @@ h5{
 .testimonial .slider-item .author .profile img{width: 70px;border-radius: 100%;}
 .testimonial .slider-item .profile-title h5{margin-bottom: 5px;}
 .testimonial .slider-item .content{height: 126px;overflow-y: auto;padding-right: 13px;}
-.testimonial .slider-item .content p{padding-bottom: 0;color: #000;text-align: justify;font-family: "Open Sans";font-size: 18.75px;font-style: normal;font-weight: 500;line-height: normal;}
+.testimonial .slider-item .content p{padding-bottom: 0;color: #000;text-align: justify;font-family: "Open Sans";font-size: 18px;font-style: normal;font-weight: 500;line-height: normal;}
 .testimonial .slider-item .content::-webkit-scrollbar {width: 3px;}  
 .testimonial .slider-item .content::-webkit-scrollbar-track {background: #6F6F6F;border-radius: 50px;}
 .testimonial .slider-item .content::-webkit-scrollbar-thumb {background: #3E3E3E;}  
@@ -589,6 +610,7 @@ footer .footer-bottom .text{padding: 0 20px;}
 .modal-content{
     border-radius: 30px;
     padding: 40px 45px;
+    overflow: hidden;
 }
 .modal .modal-dialog{
     max-width: 1000px;
@@ -755,6 +777,7 @@ footer .footer-bottom .text{padding: 0 20px;}
     min-height: 570px;
     display: flex;
     align-items: flex-end;
+    margin-top: 20px;
 }
 .login-wrapper h2{
     background: linear-gradient(92.51deg, #00FFC9 1.24%, #CDFAF0 98.46%);
@@ -908,4 +931,246 @@ footer .footer-bottom .text{padding: 0 20px;}
     font-size: 25px;
     font-weight: 900;
     line-height: 1;
+}
+.edit-tabs.login-tabs.nav-tabs{
+    padding: 0;
+    background-color: transparent;
+}
+.edit-tabs.login-tabs.nav-tabs .nav-item{
+    flex: auto;
+    max-width: max-content;
+}
+.edit-tabs.login-tabs.nav-tabs .nav-item .nav-link{
+    background-color: #EBEBEB;
+    border-radius: 28px;
+    margin-right: 15px;
+    padding: 13px 20px;
+}
+.profile-form{
+    padding-top: 50px;
+}
+.dropdown-toggle::after{
+    background: url(../images/ic_down-arrow.png);
+    border: none;
+    right: 15px;
+    position: absolute;
+    top: 12px;
+    width: 20px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile-form .form-control,
+.select-gender{
+    border: 1px solid rgba(0,0,0, 0.4);
+    padding: 8px 15px;
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: left;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #EBEBEB, #EBEBEB), linear-gradient(0deg, #000000, #000000);
+    width: 100%;
+    margin-bottom: 40px;
+    color: #3E3E3E !important;
+}
+.dropdown-menu a {
+    padding: 8px 15px;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+.dropdown-menu.show {
+    background: linear-gradient(0deg, #EBEBEB, #EBEBEB), linear-gradient(0deg, #000000, #000000);
+    display: block;
+    right: 0;
+    border-radius: 10px;
+    font-family: 'Lexend Deca';
+}
+.profile-form label a{
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    font-weight: 300;
+    color: #2F695D;
+}
+.profile-form label{
+    font-family: 'Lexend Deca';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.profile-form.address .form-control{
+    margin-bottom: 15px;
+}
+/* .profile-modal .modal-content{padding: 0;}
+.profile-modal .modal-body{padding: 0;} */
+
+.map-blk {
+    width: 500px;
+    height: 764px;
+    position: absolute;
+    top: -96px;
+    right: -50px;
+}
+.map-blk  iframe{position: absolute;top: 0;left:0;width: 100%;height: 100%;}
+.payment-summary .gray-box{
+    margin: 0;
+    min-height: auto;
+    border-radius: 0;
+}
+.payment-summary .gray-box h2{padding-bottom: 25px;position: relative;}
+.payment-summary .gray-box .summary-wrapper:after{position: absolute;bottom: 0;left: 0;width: 100%;background: linear-gradient(1deg, #EBEBEB 0%, rgba(235, 235, 235, 0) 100%);content: "";height: 124px;overflow: hidden;}
+.payment-summary .summary{position: relative;height: 486px;overflow-y: auto;overflow-x: hidden;}
+.payment-summary .summary::-webkit-scrollbar{width: 12px;background-color: #3E3E3E;border-radius: 20px;opacity: 0.5;}
+.payment-summary .summary::-webkit-scrollbar-thumb{width: 5px;background-color: #EBEBEB;border-radius: 20px;}
+.payment-summary .summary-item{margin-bottom: 23px;}
+.payment-summary .summary-text .title{display: flex;justify-content: space-between;margin-bottom: 12px;}
+.payment-summary .summary-text .title a{font-family: "Lexend Deca",sans-serif;font-size: 15px;font-weight: 300;line-height: 19px;color: #2F695D;}
+.payment-summary .summary-text .issue-text p{color: #6F6F6F;}
+.payment-summary .summary-text .price p{color: #2F695D;font-size: 22px;font-weight: 700;}
+.payment-summary  .delete-icon .icon{width: 55px;height: 58px;background-color: #2F695D;border-radius: 10px;display: flex;align-items: center;justify-content: center;}
+.payment-summary .promo-code .form-group{
+    position: relative;
+}
+.payment-summary .promo-code .apply-link{
+    position: absolute;
+    font-family: 'Basis Grotesque Arabic Pro';
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1;
+    color: #2F695D;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+}
+.payment-summary .promo-code .form-control{
+    border: 2px solid #2F695D;
+    border-radius: 20px;
+    padding: 20px 95px;
+    font-family: 'Lexend Deca';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1;
+    background-image: url(../images/ic_promo.png);
+    background-repeat: no-repeat;
+    background-position: 5% center;
+}
+.total-checkout {
+    padding-top: 20px;
+}
+.total-checkout li:first-child{
+    border: none;
+}
+.total-checkout li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 2px solid rgba(62, 62, 62, .1);
+    margin-bottom: 5px;
+}
+.total-checkout li:last-child{
+    border-top: 2px solid rgba(62, 62, 62, 1);
+}
+.total-checkout li:last-child span{
+    font-size: 30px !important;
+    font-weight: 700;
+}
+.total-checkout li p{
+    padding-bottom: 5px;
+}
+.total-checkout li span{
+    display: block;
+    font-family: 'Lexend Deca';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
+.total-checkout li span sub{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    color: #2F695D;
+    padding-left: 10px;
+}
+.total-checkout li span.TandC{
+    font-size: 12px;
+    font-weight: 250;
+    color: #6F6F6F;
+}
+.total-checkout li span.price{
+    color: #2F695D;
+    font-weight: 900;
+    font-size: 22px;
+}
+.payment-summary .right-col{
+    padding: 50px 0;
+}
+.payment-summary .right-col h2{
+    font-size: 25px;
+}
+.address-box{
+    background-color: rgba(235, 235, 235, 1);
+    border-radius: 18px;
+    padding: 18px 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid transparent;
+}
+.address-box-wrapper{
+    position: relative;
+}
+.address-box-wrapper .form-control{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.address-box-wrapper .form-control:checked + .address-box,
+.address-box-wrapper .form-control:checked + .address-box > div{
+    border-color: #2F695D;
+}
+.address-box-wrapper .form-control:checked + .address-box svg path{
+    fill: #23957D !important;
+}
+.address-box-wrapper .form-control:checked + .address-box span{
+    color: #2F695D;
+}
+.address-box > div{
+    border-right: 3px solid rgba(110, 110, 110, 1);
+    padding-right: 10px;
+    text-align: center;
+}
+.address-box > div span{
+    font-family: 'Lexend Deca';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.address-box p{
+    padding: 0;
+    padding-left: 15px;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    
+}
+.address-box-detail{
+    font-family: 'Lexend Deca';
+    font-size: 19px;
+    color: rgba(111, 111, 111, 1);
+    line-height: 1.3;
+    padding: 30px 0;
+}
+.address-box-detail b,
+.address-box-detail span{
+    color: #2F695D;
+    font-weight: 700;
 }

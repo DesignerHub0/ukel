@@ -1,0 +1,115 @@
+@media(max-width: 1480px) {
+    .product-list .img-wrapper{
+        height: 130px;
+        width: 130px;
+    }
+    .login-link{
+        font-size: 24px;
+    }
+    .want-to-repair {
+        padding: 50px 0;
+    }
+    .header{
+        padding: 15px;
+    }
+    .site-logo{
+        width: 100px;
+        height: auto;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .filter-wrapper.nav-tabs .nav-link {
+        font-size: 20px;
+    }
+    .filter-wrapper {
+        padding-bottom: 30px;
+    }
+    .offer-wrapper .offer-inner h2 {
+        font-size: 48px;
+    }
+    .offer-wrapper .offer-inner .price {
+        font-size: 80px;
+        padding-top: 0;
+    }
+    .offer-wrapper .offer-inner ul li {
+        font-size: 22px;
+        padding-left: 40px;
+    }
+    .offer-wrapper .offer-inner ul {
+        padding: 30px 0;
+    }
+    .offer-wrapper .offer-inner{
+        padding: 35px 30px;
+    }
+    .offer-wrapper .premium.offer-inner-wrapper .offer-inner{
+        padding: 60px 30px;
+    }
+    .book-with-us {
+        padding: 50px 0 0;
+    }
+    .book-with-us .wrapper .left .title h2{
+        font-size: 24px;
+    }
+    .book-with-us .wrapper .left .text-blk p {
+        font-size: 20px;
+    }
+    .testimonial,
+    .issue-selction-wrapper {
+        padding: 50px 0;
+    }
+    footer{
+        padding: 50px 0;
+    }
+    footer h4{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    footer .footer-top li a,
+    footer .footer-bottom p{
+        font-size: 20px;
+    }
+    footer .footer-top li:not(:last-child) {
+        padding-bottom: 10px;
+    }
+    footer .footer-top {
+        margin-bottom: 50px;
+    }
+    .product-list h3{
+        font-size: 20px;
+    }
+    .product-item {
+        padding: 0 15px;
+    }
+    .btn span{
+        font-size: 24px;
+    }
+    .btn {
+        padding: 15px 15px;
+    }
+    .testimonial .slider-item .content p{
+        font-size: 16px;
+    }
+    .issue-selection-option.product-list .product-item {
+        padding: 0 20px 40px;
+    }
+    .advertise-item p,
+    .profile-wrapper .user-detail p,
+    .profile-form label {
+        font-size: 22px;
+    }
+    .advertise-item span,
+    .issue-header .form-control{
+        font-size: 20px;
+    }    
+    .advertise-item span.badge,
+    .profile-wrapper .user-detail span{
+        font-size: 18px;
+    }
+    .login-tabs.nav-tabs .nav-item .nav-link{
+        font-size: 20px;
+    }
+    .modal-content{
+        padding: 30px;
+    }
+}

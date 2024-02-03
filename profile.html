@@ -10,26 +10,33 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css' />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header container">
-            <a href="index.html" class="site-logo">
-                <img src="images/logo.png" />
-            </a>
-            <!-- <a href="#" class="login-link" data-toggle="modal" data-target="#LoginModal">
-                Log in
-            </a> -->
-            <a href="profile.html" class="profile">
-                <img src="images/profile.png" />
-            </a>
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <a href="index.html" class="site-logo">
+                        <img src="images/logo.png" />
+                    </a>
+                    <!-- <a href="#" class="login-link" data-toggle="modal" data-target="#LoginModal">
+                        Log in
+                    </a> -->
+                    <a href="profile.html" class="profile">
+                        <img src="images/profile.png" />
+                    </a>
+                </div>
+                
+            </div>
+            
         </header>
         <main>
             <section class="profile-detail">
                 <div class="container">
                     <div class="profile-wrapper">
-                        <a href="#" class="edit-btn">Edit</a>
+                        <a href="#" class="edit-btn" data-toggle="modal" data-target="#editModal">Edit</a>
                         <div class="left-col">
                             <img src="images/profile.png" />
                             <div class="user-detail">
@@ -71,6 +78,183 @@
                     </div>
                 </div>
             </section>
+            <!-- Edit profile modal -->
+            <div class="modal fade bd-example-modal-lg profile-modal" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.71" d="M19.6337 12.6337L16.7675 15.5L19.6337 18.3663C20.1225 18.855 20.1225 19.645 19.6337 20.1337C19.39 20.3775 19.07 20.5 18.75 20.5C18.43 20.5 18.11 20.3775 17.8663 20.1337L15 17.2675L12.1337 20.1337C11.89 20.3775 11.57 20.5 11.25 20.5C10.93 20.5 10.61 20.3775 10.3663 20.1337C9.8775 19.645 9.8775 18.855 10.3663 18.3663L13.2325 15.5L10.3663 12.6337C9.8775 12.145 9.8775 11.355 10.3663 10.8663C10.855 10.3775 11.645 10.3775 12.1337 10.8663L15 13.7325L17.8663 10.8663C18.355 10.3775 19.145 10.3775 19.6337 10.8663C20.1225 11.355 20.1225 12.145 19.6337 12.6337ZM30 15.5C30 23.7712 23.2712 30.5 15 30.5C6.72875 30.5 0 23.7712 0 15.5C0 7.22875 6.72875 0.5 15 0.5C23.2712 0.5 30 7.22875 30 15.5ZM27.5 15.5C27.5 8.6075 21.8925 3 15 3C8.1075 3 2.5 8.6075 2.5 15.5C2.5 22.3925 8.1075 28 15 28C21.8925 28 27.5 22.3925 27.5 15.5Z" fill="#6F6F6F"/>
+                            </svg>
+                            </span>
+                        </button>
+                        <div class="modal-wrapper">
+                            <div class="edit-modal-wrapper">
+                                <ul class="login-tabs edit-tabs nav nav-tabs" role="tablist">
+                                    <li class="nav-item"><a href="#Personal" role="tab" data-toggle="tab" class="nav-link active">                                            
+                                        Personal
+                                    </a></li>
+                                    <li class="nav-item"><a href="#Contact" role="tab" data-toggle="tab" class="nav-link">Contact</a></li>
+                                    <li class="nav-item"><a href="#Address" role="tab" data-toggle="tab" class="nav-link">Address</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="Personal" role="tabpanel">
+                                        <form class="profile-form">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="First-name">First Name</label>
+                                                        <input class="form-control" id="First-name" name="First-name" placeholder="Ex. Vasudev"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="Last-name">Last Name</label>
+                                                        <input class="form-control" id="Last-name" name="Last-name"  placeholder="Ex. Devmurari"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="Gender">Gender</label>
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle select-gender" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                ---Select---
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                              <a class="dropdown-item" href="#">Male</a>
+                                                              <a class="dropdown-item" href="#">Female</a>
+                                                              <a class="dropdown-item" href="#">Other</a>
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="birthdate">Birthday Date</label>
+                                                        <input class="form-control" id="birthdate" name="birthdate"  placeholder="Date / Month / Year"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane" id="Contact" role="tabpanel">
+                                        <form class="profile-form">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="phone">Phone <a href="#" title="Change">Change</a></label>
+                                                        <input class="form-control" id="phone" name="phone" placeholder="+91 76006 82109"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="Email">Email <a href="#" title="Change">Change</a></label>
+                                                        <input class="form-control" id="Email" name="Email"  placeholder="jdkidecha@gmail.com"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane" id="Address" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <form class="profile-form address">
+                                                    <div>
+                                                        <label for="Home">Home <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13.0358 6.95833C13.1572 7.07717 13.2459 7.22517 13.2937 7.38816C13.3414 7.55115 13.3464 7.72366 13.3083 7.88917L11.1017 13.7583C11.0592 13.8774 10.981 13.9805 10.8778 14.0536C10.7746 14.1267 10.6514 14.1661 10.525 14.1667C10.4114 14.1705 10.299 14.1432 10.1998 14.0877C10.1006 14.0321 10.0186 13.9505 9.9625 13.8517L9.20584 11.3717C9.16402 11.2341 9.08733 11.1097 8.98322 11.0106C8.8791 10.9114 8.75111 10.8409 8.61167 10.8058L6.26334 10.2225C6.13974 10.1804 6.03211 10.1013 5.95511 9.99588C5.8781 9.89045 5.83547 9.76385 5.83301 9.63331C5.83055 9.50278 5.86839 9.37466 5.94136 9.2664C6.01434 9.15815 6.11891 9.07502 6.24084 9.02833L12.1242 6.695C12.2859 6.65648 12.4549 6.66048 12.6147 6.70663C12.7744 6.75277 12.9195 6.83949 13.0358 6.95833ZM20 10C20 11.9778 19.4135 13.9112 18.3147 15.5557C17.2159 17.2002 15.6541 18.4819 13.8268 19.2388C11.9996 19.9957 9.98891 20.1937 8.0491 19.8079C6.10929 19.422 4.32746 18.4696 2.92894 17.0711C1.53041 15.6725 0.578004 13.8907 0.192152 11.9509C-0.193701 10.0111 0.0043329 8.00043 0.761209 6.17317C1.51809 4.3459 2.79981 2.78412 4.4443 1.6853C6.08879 0.58649 8.02219 0 10 0C12.6513 0.00286757 15.1932 1.05736 17.0679 2.9321C18.9426 4.80684 19.9971 7.34871 20 10ZM14.2108 5.77667C13.8833 5.44718 13.4744 5.21014 13.0257 5.08955C12.577 4.96897 12.1044 4.96912 11.6558 5.09C11.6233 5.09917 5.6325 7.47667 5.6325 7.47667C5.18707 7.65039 4.80685 7.95861 4.54472 8.35845C4.28259 8.7583 4.15158 9.2299 4.16992 9.70766C4.18825 10.1854 4.35501 10.6456 4.64701 11.0242C4.93901 11.4027 5.34174 11.6809 5.79917 11.82L7.75417 12.3092L8.39834 14.4125C8.56972 14.8329 8.86258 15.1926 9.23948 15.4457C9.61637 15.6988 10.0602 15.8338 10.5142 15.8333H10.5508C11.0117 15.8274 11.46 15.682 11.8366 15.4164C12.2133 15.1507 12.5006 14.7772 12.6608 14.345C12.6608 14.345 14.905 8.37417 14.9108 8.345C15.0311 7.8932 15.0297 7.41763 14.9067 6.96656C14.7838 6.51549 14.5437 6.10497 14.2108 5.77667Z" fill="#2F695D"/>
+                                                            </svg>
+                                                            </label>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="HomeStreet" name="HomeStreet" placeholder="Home / Street"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="Landmark" name="Landmark"  placeholder="Landmark"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="City" name="City"  placeholder="City"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="State" name="State"  placeholder="State"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="Zip Code" name="Zip Code"  placeholder="Zip Code"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pt-4">
+                                                        <label for="Work">Work <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13.0358 6.95833C13.1572 7.07717 13.2459 7.22517 13.2937 7.38816C13.3414 7.55115 13.3464 7.72366 13.3083 7.88917L11.1017 13.7583C11.0592 13.8774 10.981 13.9805 10.8778 14.0536C10.7746 14.1267 10.6514 14.1661 10.525 14.1667C10.4114 14.1705 10.299 14.1432 10.1998 14.0877C10.1006 14.0321 10.0186 13.9505 9.9625 13.8517L9.20584 11.3717C9.16402 11.2341 9.08733 11.1097 8.98322 11.0106C8.8791 10.9114 8.75111 10.8409 8.61167 10.8058L6.26334 10.2225C6.13974 10.1804 6.03211 10.1013 5.95511 9.99588C5.8781 9.89045 5.83547 9.76385 5.83301 9.63331C5.83055 9.50278 5.86839 9.37466 5.94136 9.2664C6.01434 9.15815 6.11891 9.07502 6.24084 9.02833L12.1242 6.695C12.2859 6.65648 12.4549 6.66048 12.6147 6.70663C12.7744 6.75277 12.9195 6.83949 13.0358 6.95833ZM20 10C20 11.9778 19.4135 13.9112 18.3147 15.5557C17.2159 17.2002 15.6541 18.4819 13.8268 19.2388C11.9996 19.9957 9.98891 20.1937 8.0491 19.8079C6.10929 19.422 4.32746 18.4696 2.92894 17.0711C1.53041 15.6725 0.578004 13.8907 0.192152 11.9509C-0.193701 10.0111 0.0043329 8.00043 0.761209 6.17317C1.51809 4.3459 2.79981 2.78412 4.4443 1.6853C6.08879 0.58649 8.02219 0 10 0C12.6513 0.00286757 15.1932 1.05736 17.0679 2.9321C18.9426 4.80684 19.9971 7.34871 20 10ZM14.2108 5.77667C13.8833 5.44718 13.4744 5.21014 13.0257 5.08955C12.577 4.96897 12.1044 4.96912 11.6558 5.09C11.6233 5.09917 5.6325 7.47667 5.6325 7.47667C5.18707 7.65039 4.80685 7.95861 4.54472 8.35845C4.28259 8.7583 4.15158 9.2299 4.16992 9.70766C4.18825 10.1854 4.35501 10.6456 4.64701 11.0242C4.93901 11.4027 5.34174 11.6809 5.79917 11.82L7.75417 12.3092L8.39834 14.4125C8.56972 14.8329 8.86258 15.1926 9.23948 15.4457C9.61637 15.6988 10.0602 15.8338 10.5142 15.8333H10.5508C11.0117 15.8274 11.46 15.682 11.8366 15.4164C12.2133 15.1507 12.5006 14.7772 12.6608 14.345C12.6608 14.345 14.905 8.37417 14.9108 8.345C15.0311 7.8932 15.0297 7.41763 14.9067 6.96656C14.7838 6.51549 14.5437 6.10497 14.2108 5.77667Z" fill="#2F695D"/>
+                                                            </svg>
+                                                            </label>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="HomeStreet" name="HomeStreet" placeholder="Home / Street"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="Landmark" name="Landmark"  placeholder="Landmark"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="City" name="City"  placeholder="City"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="State" name="State"  placeholder="State"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" id="Zip Code" name="Zip Code"  placeholder="Zip Code"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <a href="#" class="btn btn-fill" style="margin-top:20px; height: 48px; padding: 6px 30px;">
+                                                                    <span style="font-size: 20px;">Add</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="map-blk">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7383.682156103393!2d70.78470547770998!3d22.28400910000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cbc5037404eb%3A0xdf416d709ebf2fa3!2sTechJd!5e0!3m2!1sen!2sin!4v1706958227908!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12" style="text-align: right;">
+                                            <a href="#" class="btn btn-fill" style="min-width: 250px;">
+                                                <span>Save</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="container">
