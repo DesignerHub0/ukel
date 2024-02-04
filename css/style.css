@@ -142,9 +142,9 @@ h6{
 }
 /* Header Css */
 .header{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     padding: 20px;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
@@ -176,14 +176,14 @@ h6{
 }
 .banner-slider .slider-item img{width: 100%;}
 .banner-slider .slick-dots {
-    bottom: 10px;
+    bottom: 30px;
 }
 .banner-slider .slick-dots li{
     margin: 0 10px 0 0;
 }
 .banner-slider .slick-dots li button:before{
     opacity: 1;
-    color: #ffffff;
+    color: transparent;
     font-size: 12px;
 }
 .banner-slider .slick-dots li,
@@ -350,11 +350,11 @@ h6{
     font-family: "Open Sans";
     font-size: 25px;
     line-height: 1.1;
-    margin-bottom: 20px;
     font-weight: 500;
     position: relative;
     padding-left: 32px;
 }
+.offer-wrapper .offer-inner ul li:not(:last-child){margin-bottom: 20px;}
 .offer-wrapper .offer-inner ul li:before{
     position: absolute;
     content: '';
@@ -821,6 +821,7 @@ footer .footer-bottom .text{padding: 0 20px;}
     line-height: 20px;
     text-align: left;
     padding: 27px 0;
+    color: #FFF;
 }
 .login-inner .form-group{
     position: relative;

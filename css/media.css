@@ -80,6 +80,7 @@
     }
     .product-item {
         padding: 0 15px;
+        text-align: center;
     }
     .btn span{
         font-size: 24px;
@@ -111,5 +112,359 @@
     }
     .modal-content{
         padding: 30px;
+        margin: 0 30px;
+    }
+}
+
+@media(max-width:1199px){
+    .product-list {
+        flex-wrap: wrap;
+    }
+    .slick-dotted.slick-slider{
+        margin: 0;
+    }
+    .product-list .slider-item img{width: 100%;}
+    .product-list .slick-dots {
+        bottom: -20px;
+    }
+    .product-list .slick-dots li{
+        margin: 0 10px 0 0;
+    }
+    .product-list .slick-dots li button:before{
+        opacity: 1;
+        color: transparent;
+        font-size: 12px;
+
+    }
+    .product-list .slick-dots li,
+    .product-list .slick-dots li button{
+        padding: 0;
+        width: 5px;
+        height: 5px;
+        background: #2F695D;
+        border-radius: 50%;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+    }
+    .product-list .slick-dots li.slick-active button:before{
+     color: transparent;
+    }
+    .product-list .slick-dots li.slick-active,
+    .product-list .slick-dots li.slick-active button{
+        width: 20px;
+        border-radius: 45px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+    }
+    .offer-wrapper .offer-inner h2 {
+        font-size: 38px;
+    }
+    .filter-wrapper.nav-tabs .nav-link {
+        margin-bottom: 20px;
+    }
+    .offer-wrapper .offer-inner .price {
+        font-size: 60px;
+    }
+    .offer-wrapper .offer-inner .price span, .offer-wrapper .offer-inner .price sub {
+        font-size: 50px;
+    }
+    .offer-wrapper .offer-inner ul li {
+        font-size: 18px;
+    }
+    .offer-wrapper{margin: 0 -15px;}
+    .offer-wrapper .offer-inner-wrapper {
+        padding: 0 15px;
+    }
+    .login-wrapper {
+        max-width: 320px;
+        min-height: 500px;
+        align-items: center;
+     
+    }
+    .login-wrapper h2 {
+        font-size: 30px;
+      
+    }
+    .login-tabs.nav-tabs .nav-item .nav-link {
+        font-size: 16px;
+    }
+    .login-inner p {
+        padding: 15px 0;
+    }
+    .login-inner .form-control,
+    .login-inner .form-group span {
+        font-size: 22px;
+    }
+    .login-inner .form-group {
+        margin-bottom: 25px;
+    }
+    .book-with-us .wrapper .left .text-blk p {
+        font-size: 18px;
+    }
+    .profile-wrapper {
+        margin-top: 70px;
+        PADDING: 70px 30px 50px;
+    }
+    .profile-wrapper .left-col img {
+        width: 195px;
+        height: 195px;
+     
+    }
+    .profile-wrapper .left-col .user-detail {
+        padding-left: 30px;
+    }
+    .advertise-item p, .profile-wrapper .user-detail p, .profile-form label {
+        font-size: 18px;
+    }
+    .advertise-item span.badge, .profile-wrapper .user-detail span {
+        font-size: 16px;
+    }
+    
+}
+@media(max-width:991px){
+    .offer-wrapper {
+        margin: 0 -15px;
+        flex-wrap: wrap;
+    }
+    .offer-wrapper .offer-inner-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .offer-wrapper .offer-inner-wrapper.premium{
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 3;
+    }
+    .book-with-us .book-item {
+        margin-bottom: 20px;
+    }
+    .book-with-us .wrapper .left .title h2:before {
+        top: 10px;
+    }
+    .book-with-us {
+        padding: 50px 0;
+    }
+    footer .footer-top li a, footer .footer-bottom p {
+        font-size: 18px;
+    }
+    .profile-page .product-list {
+        display: inherit;
+     
+    }
+    .issue-header .form-control {
+        width: 390px;
+    }
+    .advertise-item-wrap {
+        padding: 0 10px;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+    .advertise-wrap{
+        margin: 0 -10px;
+    }
+    .map-blk {
+        width: 320px;
+    }
+    
+}
+@media(max-width:767px){
+    h2 {
+        font-size: 28px;
+    }
+    .modal-content {
+        padding: 20px;
+        margin: 0 20px;
+    }
+    .modal-content .modal-body{padding: 0;}
+    .login-wrapper h2 {
+        font-size: 22px;
+    }
+    .login-tabs.nav-tabs .nav-item .nav-link {
+        font-size: 11px;
+    }
+    .login-wrapper {
+        padding: 20px;
+    }
+    .login-inner .form-control {
+        padding: 2px 20px 3px 40px;
+    }
+    .login-inner .form-control, .login-inner .form-group span {
+        font-size: 12px;
+    }
+    .login-inner .form-group {
+        margin-bottom: 15px;
+    }
+    
+    #LoginModal .modal-wrapper {
+        background-size: 70%;
+        background-position: top;
+        flex-wrap: wrap;
+        padding-top: 70%;
+    }
+    .login-wrapper {
+        max-width: 100%;
+        min-height: 100%;
+        align-items: center;
+        margin-top: 0;
+        display: block;
+    }
+    .offer-wrapper .offer-inner,
+    .offer-wrapper .premium.offer-inner-wrapper .offer-inner {
+        padding: 35px 20px;
+    }
+    .offer-wrapper .offer-inner h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .offer-wrapper .offer-inner .price {
+        font-size: 50px;
+    }
+    .offer-wrapper .offer-inner .price span, .offer-wrapper .offer-inner .price sub {
+        font-size: 40px;
+    }
+    .offer-wrapper{
+        margin: 0;
+    }
+    .offer-wrapper .offer-inner-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .book-with-us .wrapper {
+     
+        flex-wrap: wrap;
+    }
+    .book-with-us .wrapper{flex-direction: column-reverse;}
+    .book-with-us .wrapper :is(.left,.right){flex: 0 0 100%;max-width: 100%;}
+    .book-with-us .wrapper .right{margin-bottom: 20px;}
+    .book-with-us,
+    .want-to-repair,
+    .go-green,
+    .testimonial, 
+    .issue-selction-wrapper,
+    footer {
+        padding: 30px 0;
+    }
+    footer .wrapper {
+        flex-wrap: wrap;
+    }
+    footer .wrapper .left,
+    footer .wrapper .center{flex: 0 0 50%;max-width: 50%;}
+    footer .wrapper .right{flex: 0 0 100%;max-width: 100%;}
+    footer .footer-top li a, footer .footer-bottom p {
+        font-size: 14px;
+    }
+    footer h4 {
+        font-size: 18px;      
+    }
+    footer .footer-top {
+        margin-bottom: 30px;
+    }
+    footer .wrapper .right{margin: 20px 0;}
+    footer .footer-bottom .wrapper .logo{flex: 0 0 100%;max-width: 100%;text-align: center;margin-bottom: 20px;}    
+    footer .footer-bottom .wrapper .text{flex: 0 0 100%;max-width: 100%;order: 3;margin-top: 20px;} 
+    footer .footer-bottom .wrapper .text p{font-size: 12px;text-align: center;}
+    footer .footer-bottom .wrapper .social-links{flex: 0 0 100%;max-width: 100%;padding-left: 0;margin-bottom: 20px;}
+    footer .footer-bottom .wrapper .social-links ul{justify-content: center;}
+    footer .footer-bottom .wrapper .logo img{max-width: 100px;}
+    .line-left {max-width: 100%;flex: 0 0 100%;order: 2;}
+    .offer-wrapper .offer-inner span.badge {font-size: 12px;}
+    .product-item {
+        padding: 0;
+     
+    }
+    .testimonial .slider-item {
+        padding: 22px 26px 25px 25px;
+     
+    }
+    .site-logo {
+        width: 80px;
+     
+    }
+    .login-link {
+        font-size: 18px;
+    }
+    .issue-header {
+        flex-wrap: wrap;
+    }
+    .issue-header .form-control {
+        width: 100%;
+    }
+    .advertise-item-wrap {
+        padding: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .issue-selection-option.product-list .product-item {
+        padding: 0 20px 40px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .modal h2 {
+        font-size: 28px;
+    }
+    .inner-issue {
+        flex-wrap: wrap;
+    }
+    .inner-wrapper .badge-outer {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .inner-wrapper .badge {
+        font-size: 19px;
+    }
+    .description li {
+        font-size: 18px;
+    }
+    .description {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .inner-wrapper textarea {
+        font-size: 18px;height: 128px;
+    }
+    .inner-wrapper .policy-link a {
+        font-size: 18px;
+    }
+    .inner-wrapper .policy-link {
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    .profile-wrapper {
+        margin-top: 40px;
+        PADDING: 70px 30px 50px;
+        flex-wrap: wrap;
+    }
+    .profile-wrapper .left-col {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        flex: 0 0 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .profile-wrapper .right-col {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .profile-wrapper .left-col .user-detail {
+        padding-left: 0;
+        width: 100%;
+    }
+    .profile-wrapper .left-col img {
+        margin: 0 auto;
+    }
+    .edit-tabs.login-tabs.nav-tabs .nav-item .nav-link {
+        margin-bottom: 15px;
+    }
+    .profile-form {
+        padding-top: 20px;
+    }
+    .map-blk {
+        display: none;
     }
 }
