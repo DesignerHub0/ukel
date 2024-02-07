@@ -139,6 +139,7 @@ h6{
 .container{
     max-width: 1558px;
     padding: 0 20px;
+    overflow: hidden;
 }
 /* Header Css */
 .header{
@@ -174,9 +175,14 @@ h6{
 .slick-dotted.slick-slider{
     margin: 0;
 }
-.banner-slider .slider-item img{width: 100%;}
+.banner-slider .slider-item img{width: 100%;opacity: 0;}
 .banner-slider .slick-dots {
     bottom: 30px;
+}
+.banner-slider .slider-item{
+    min-height: 350px;
+    height: auto;
+    background-color: #2F695D;
 }
 .banner-slider .slick-dots li{
     margin: 0 10px 0 0;
@@ -211,15 +217,25 @@ h6{
     padding: 125px 0;
 }
 .brand-wrapper{
-    display: none;
+    /* display: none; */
+    height: 0;
+    opacity: 0;
+    position: relative;
+    z-index: -5;
 }
 .want-to-repair.open-brand .product-wrapper{
-    display: none;
+    opacity: 0;
+    position: relative;
+    z-index: -5;
+    height: 0;
 }
 .want-to-repair.open-brand .brand-wrapper{
-    display: block;
+    opacity: 1;
+    z-index: 1;
+    height: auto;
+    /* display: block; */
 }
-.product-list{
+.product-list.slick-dotted.slick-slider{
     display: flex;
     align-items: center;
     margin: 0 -20px;
@@ -262,6 +278,13 @@ h6{
 .filter-wrapper{
     padding-bottom: 50px;
     border: none;
+    margin: 0 -20px;
+}
+.filter-wrapper li:first-child{
+    padding-left: 20px;
+}
+.filter-wrapper li{
+    padding: 0 7px;
 }
 .filter-wrapper.nav-tabs .nav-link.active{
     border: 2px solid #2F695D;
@@ -273,22 +296,24 @@ h6{
     font-size: 25px;
     display: inline-block;
     line-height: 1;
-    margin-right: 15px;
     border: 2px solid transparent;
     color: #3E3E3E;
 }
 .offer-wrapper{
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     margin: 0 -20px;
 }
 .offer-wrapper .premium.offer-inner-wrapper .offer-inner {
     padding: 80px 35px;
 }
+.offer-wrapper .premium.offer-inner-wrapper{
+    padding-top: 0;
+}
 .offer-wrapper .offer-inner-wrapper{
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    padding: 0 20px;
+    padding: 30px 20px;
 }
 .offer-wrapper .offer-inner{
     border-radius: 35px;
@@ -808,10 +833,10 @@ footer .footer-bottom .text{padding: 0 20px;}
     font-weight: 700;
     line-height: 1;
     color: #3E3E3E;
+    border-radius: 28px;
 }
 .login-tabs.nav-tabs .nav-item.show .nav-link, .login-tabs.nav-tabs .nav-link.active{
     background: linear-gradient(0deg, #2F695D, #2F695D), linear-gradient(0deg, #EBEBEB, #EBEBEB);
-    border-radius: 28px;
     color: #FFFFFF;
 }
 .login-inner p{

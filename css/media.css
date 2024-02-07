@@ -82,6 +82,9 @@
         padding: 0 15px;
         text-align: center;
     }
+    .product-list.slick-dotted.slick-slider{
+        margin: 0 -15px;
+    }
     .btn span{
         font-size: 24px;
     }
@@ -156,6 +159,12 @@
         transition: all 0.3s;
         -webkit-transition: all 0.3s;
     }
+    .offer-wrapper .offer-inner{
+        padding: 25px 20px; 
+    }
+    .offer-wrapper .premium.offer-inner-wrapper .offer-inner{
+        padding: 60px 20px 30px; 
+    }
     .offer-wrapper .offer-inner h2 {
         font-size: 38px;
     }
@@ -227,16 +236,16 @@
         flex-wrap: wrap;
     }
     .offer-wrapper .offer-inner-wrapper {
-        flex: 0 0 50%;
-        max-width: 50%;
+        /* flex: 0 0 50%;
+        max-width: 50%; */
         padding: 0 20px;
         margin-bottom: 20px;
     }
-    .offer-wrapper .offer-inner-wrapper.premium{
+    /* .offer-wrapper .offer-inner-wrapper.premium{
         flex: 0 0 100%;
         max-width: 100%;
         order: 3;
-    }
+    } */
     .book-with-us .book-item {
         margin-bottom: 20px;
     }
@@ -277,6 +286,7 @@
     .modal-content {
         padding: 20px;
         margin: 0 20px;
+        border-radius: 20px;
     }
     .modal-content .modal-body{padding: 0;}
     .login-wrapper h2 {
@@ -287,9 +297,11 @@
     }
     .login-wrapper {
         padding: 20px;
+        border-radius: 20px;
+        padding-top: 40px;
     }
     .login-inner .form-control {
-        padding: 2px 20px 3px 40px;
+        padding: 12px 20px 12px 40px;
     }
     .login-inner .form-control, .login-inner .form-group span {
         font-size: 12px;
@@ -298,11 +310,20 @@
         margin-bottom: 15px;
     }
     
+    #LoginModal .modal-content{
+        padding: 0;
+        border: none;
+    }
+    .modal .close {
+        top: 10px;
+        right: 10px;
+    }
     #LoginModal .modal-wrapper {
-        background-size: 70%;
+        /* background-size: 70%;
         background-position: top;
         flex-wrap: wrap;
-        padding-top: 70%;
+        padding-top: 70%; */
+        padding: 0;
     }
     .login-wrapper {
         max-width: 100%;
@@ -326,12 +347,12 @@
         font-size: 40px;
     }
     .offer-wrapper{
-        margin: 0;
+        margin: 0 -20px;
     }
     .offer-wrapper .offer-inner-wrapper {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 0;
+        /* padding: 0; */
     }
     .book-with-us .wrapper {
      
@@ -351,9 +372,6 @@
     footer .wrapper {
         flex-wrap: wrap;
     }
-    footer .wrapper .left,
-    footer .wrapper .center{flex: 0 0 50%;max-width: 50%;}
-    footer .wrapper .right{flex: 0 0 100%;max-width: 100%;}
     footer .footer-top li a, footer .footer-bottom p {
         font-size: 14px;
     }
@@ -363,7 +381,6 @@
     footer .footer-top {
         margin-bottom: 30px;
     }
-    footer .wrapper .right{margin: 20px 0;}
     footer .footer-bottom .wrapper .logo{flex: 0 0 100%;max-width: 100%;text-align: center;margin-bottom: 20px;}    
     footer .footer-bottom .wrapper .text{flex: 0 0 100%;max-width: 100%;order: 3;margin-top: 20px;} 
     footer .footer-bottom .wrapper .text p{font-size: 12px;text-align: center;}
@@ -372,13 +389,16 @@
     footer .footer-bottom .wrapper .logo img{max-width: 100px;}
     .line-left {max-width: 100%;flex: 0 0 100%;order: 2;}
     .offer-wrapper .offer-inner span.badge {font-size: 12px;}
-    .product-item {
-        padding: 0;
-     
-    }
     .testimonial .slider-item {
-        padding: 22px 26px 25px 25px;
-     
+        padding: 22px 15px 25px 15px;
+        margin: 0 10px;
+        border-radius: 20px;
+    }
+    .testimonial .slider-item .profile-title h5{
+        font-size: 16px;
+    }
+    .testimonial .slider-item .author .profile {
+        margin-right: 15px;
     }
     .site-logo {
         width: 80px;
@@ -467,4 +487,56 @@
     .map-blk {
         display: none;
     }
+    #LoginModal .close span path{
+        fill: #ffffff;
+    }
+    .modal#LoginModal .modal-dialog{
+        max-width: 400px;
+    }
+}
+@media(max-width:480px){
+    .offer-wrapper .offer-inner ul li:before{
+        height: 20px;
+        width: 20px;
+        background-size: 100%;
+    }
+    .offer-wrapper .offer-inner ul li {
+        font-size: 16px;
+        padding-left: 27px;
+    }
+    .offer-wrapper .offer-inner-wrapper{
+        padding: 0 10px;
+    }
+    .offer-wrapper {
+        margin: 0 -10px;
+    }
+    .offer-wrapper .offer-inner {
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .offer-wrapper .premium.offer-inner-wrapper .offer-inner{
+        padding: 40px 15px 15px;
+    }
+    .offer-wrapper .offer-inner span.badge{
+        padding: 5px 10px;
+        right: 10px;
+        top: 10px;
+        font-size: 10px;
+    }
+    .offer-wrapper .offer-inner .price {
+        font-size: 46px;
+    }
+    .btn {
+        padding: 10px 15px;
+    }
+    .btn span {
+        font-size: 20px;
+    }
+    footer .wrapper .left,
+    footer .wrapper .center{flex: 0 0 50%;max-width: 50%;}
+    footer .wrapper .right{flex: 0 0 100%;max-width: 100%;}
+    footer .wrapper .right {
+        margin: 20px 0;
+    }
+    
 }

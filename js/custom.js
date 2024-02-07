@@ -7,91 +7,82 @@ $(function() {
         arrows: false,
     });
     $('.testimonial-slider').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
         arrows: false,
-        centerPadding:30,
         responsive: [
             {
               breakpoint: 991,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 2.2,
                 slidesToScroll:1
               }
             },
             {
                 breakpoint: 767,
                 settings: {
-                  slidesToShow: 1,
+                  slidesToShow: 1.2,
                   slidesToScroll:1
                 }
             },
             
           ]
     });
-    $('.profile-page .product-list').slick({
-        infinite: true,
-        slidesToShow: 8,
-        slidesToScroll: 8,
+    $('.offer-wrapper').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: false,
+        arrows: true,
+        dots: false,
+        speed: 300,
+        centerPadding: '20px',
+        infinite: false,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2.3,
+              slidesToScroll:1
+            }
+          },
+          {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1.5,
+                slidesToScroll:1
+              }
+          },
+          {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1.2,
+                slidesToScroll:1
+              }
+          },
+          
+        ]
+    });
+    $('.filter-wrapper').slick({
+        infinite: false,
         dots: false,
         arrows: false,
+        variableWidth: true,
+    });
+    $('.profile-page .product-list').slick({
+        infinite: true,
+        dots: true,
+        arrows: false,
         centerPadding:30,
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 5,
-                slidesToScroll:2,
-                infinite:false,
-                dots:true,
-                centerPadding:0
-              }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll:2,
-                  infinite:false,
-                  dots:true,
-                  centerPadding:0
-                } 
-            }
-            
-          ]
+        variableWidth: true,
     });
     $('.home-page .product-list').slick({
         infinite: true,
-        slidesToShow: 8,
-        slidesToScroll: 8,
-        dots: false,
+        dots: true,
         arrows: false,
         centerPadding:30,
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 5,
-                slidesToScroll:2,
-                infinite:false,
-                dots:true,
-                centerPadding:0
-              }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll:2,
-                  infinite:false,
-                  dots:true,
-                  centerPadding:0
-                } 
-            }
-            
-          ]
+        variableWidth: true,
     });
     // $('.filter-wrapper').slick({        
     //     responsive: [
