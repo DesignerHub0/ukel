@@ -10,21 +10,22 @@ $(function() {
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots: false,
         arrows: false,
+        dots: false,
         responsive: [
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 2.2,
-                slidesToScroll:1
-              }
-            },
-            {
-                breakpoint: 767,
-                settings: {
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2.2,
+              slidesToScroll:1
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+                  dots: true,
                   slidesToShow: 1.2,
-                  slidesToScroll:1
+                  slidesToScroll:1,
                 }
             },
             
@@ -34,11 +35,10 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: false,
-        arrows: true,
+        arrows: false,
+        
         dots: false,
-        speed: 300,
         centerPadding: '20px',
-        infinite: false,
         responsive: [
           {
             breakpoint: 991,
@@ -48,28 +48,42 @@ $(function() {
             }
           },
           {
-              breakpoint: 767,
+              breakpoint: 768,
               settings: {
-                slidesToShow: 1.5,
-                slidesToScroll:1
+                slidesToShow: 2,
+                slidesToScroll:2,
+                dots: true,
+                infinite: false,
               }
-          },
+          },          
           {
-              breakpoint: 480,
+              breakpoint: 482,
               settings: {
-                slidesToShow: 1.2,
-                slidesToScroll:1
+                slidesToShow: 1,
+                slidesToScroll:1,
+                dots: true,
+                autoplay:true,
+                autoplaySpeed:3000,
+                fade: true,
+                speed: 1000,
+                infinite: true,
+                cssEase: 'ease-in-out',
+                touchThreshold: 100,
               }
-          },
-          
+          },          
         ]
     });
-    $('.filter-wrapper').slick({
-        infinite: false,
-        dots: false,
-        arrows: false,
-        variableWidth: true,
-    });
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      e.target
+      e.relatedTarget
+      $('.offer-wrapper').slick('setPosition');
+    })
+    // $('.filter-wrapper').slick({
+    //     infinite: false,
+    //     dots: false,
+    //     arrows: false,
+    //     variableWidth: true,
+    // });
     $('.profile-page .product-list').slick({
         infinite: true,
         dots: true,
@@ -77,27 +91,38 @@ $(function() {
         centerPadding:30,
         variableWidth: true,
     });
-    $('.home-page .product-list').slick({
+    $('#desktopScreen').slick({
         infinite: true,
-        dots: true,
+        dots: false,
         arrows: false,
-        centerPadding:30,
         variableWidth: true,
+        slidesToScroll: 1,
+        // rows: 2,
     });
-    // $('.filter-wrapper').slick({        
-    //     responsive: [
-    //         {
-    //           breakpoint: 1200,
-    //           settings: {
-    //             slidesToShow:7,
-    //             slidesToScroll:2,
-    //             infinite:false,
-    //             arrows:false
-    //           }
-    //         }
-            
-    //       ]
-    // });
+    $('#desktopScreenBrand').slick({
+        infinite: true,
+        dots: false,
+        arrows: false,
+        variableWidth: true,
+        slidesToScroll: 1,
+        // rows: 2,
+    });
+    $('#mobileScreen').slick({
+        infinite: true,
+        dots: false,
+        arrows: false,
+        variableWidth: true,
+        slidesToScroll: 1,
+        rows: 2,
+    });
+    $('#mobileScreenBrand').slick({
+        infinite: true,
+        dots: false,
+        arrows: false,
+        variableWidth: true,
+        slidesToScroll: 1,
+        rows: 2,
+    });
 
 
 

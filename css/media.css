@@ -23,7 +23,7 @@
         font-size: 20px;
     }
     .filter-wrapper {
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
     .offer-wrapper .offer-inner h2 {
         font-size: 48px;
@@ -54,7 +54,9 @@
     .book-with-us .wrapper .left .text-blk p {
         font-size: 20px;
     }
-    .testimonial,
+    .testimonial{
+        padding: 30px 0 50px;
+    }
     .issue-selction-wrapper {
         padding: 50px 0;
     }
@@ -279,230 +281,92 @@
     }
     
 }
-@media(max-width:767px){
-    h2 {
-        font-size: 28px;
-    }
-    .modal-content {
-        padding: 20px;
-        margin: 0 20px;
-        border-radius: 20px;
-    }
-    .modal-content .modal-body{padding: 0;}
-    .login-wrapper h2 {
-        font-size: 22px;
-    }
-    .login-tabs.nav-tabs .nav-item .nav-link {
-        font-size: 11px;
-    }
-    .login-wrapper {
-        padding: 20px;
-        border-radius: 20px;
-        padding-top: 40px;
-    }
-    .login-inner .form-control {
-        padding: 12px 20px 12px 40px;
-    }
-    .login-inner .form-control, .login-inner .form-group span {
-        font-size: 12px;
-    }
-    .login-inner .form-group {
-        margin-bottom: 15px;
-    }
-    
-    #LoginModal .modal-content{
-        padding: 0;
-        border: none;
-    }
-    .modal .close {
-        top: 10px;
-        right: 10px;
-    }
-    #LoginModal .modal-wrapper {
-        /* background-size: 70%;
-        background-position: top;
-        flex-wrap: wrap;
-        padding-top: 70%; */
-        padding: 0;
-    }
-    .login-wrapper {
-        max-width: 100%;
-        min-height: 100%;
-        align-items: center;
-        margin-top: 0;
-        display: block;
-    }
-    .offer-wrapper .offer-inner,
-    .offer-wrapper .premium.offer-inner-wrapper .offer-inner {
-        padding: 35px 20px;
-    }
-    .offer-wrapper .offer-inner h2 {
-        font-size: 30px;
-        padding-bottom: 10px;
-    }
-    .offer-wrapper .offer-inner .price {
-        font-size: 50px;
-    }
-    .offer-wrapper .offer-inner .price span, .offer-wrapper .offer-inner .price sub {
-        font-size: 40px;
-    }
-    .offer-wrapper{
-        margin: 0 -20px;
-    }
-    .offer-wrapper .offer-inner-wrapper {
-        flex: 0 0 100%;
-        max-width: 100%;
-        /* padding: 0; */
-    }
-    .book-with-us .wrapper {
-     
-        flex-wrap: wrap;
-    }
-    .book-with-us .wrapper{flex-direction: column-reverse;}
-    .book-with-us .wrapper :is(.left,.right){flex: 0 0 100%;max-width: 100%;}
-    .book-with-us .wrapper .right{margin-bottom: 20px;}
-    .book-with-us,
-    .want-to-repair,
-    .go-green,
-    .testimonial, 
-    .issue-selction-wrapper,
-    footer {
-        padding: 30px 0;
-    }
-    footer .wrapper {
-        flex-wrap: wrap;
-    }
-    footer .footer-top li a, footer .footer-bottom p {
-        font-size: 14px;
-    }
-    footer h4 {
-        font-size: 18px;      
-    }
-    footer .footer-top {
-        margin-bottom: 30px;
-    }
-    footer .footer-bottom .wrapper .logo{flex: 0 0 100%;max-width: 100%;text-align: center;margin-bottom: 20px;}    
-    footer .footer-bottom .wrapper .text{flex: 0 0 100%;max-width: 100%;order: 3;margin-top: 20px;} 
-    footer .footer-bottom .wrapper .text p{font-size: 12px;text-align: center;}
-    footer .footer-bottom .wrapper .social-links{flex: 0 0 100%;max-width: 100%;padding-left: 0;margin-bottom: 20px;}
-    footer .footer-bottom .wrapper .social-links ul{justify-content: center;}
-    footer .footer-bottom .wrapper .logo img{max-width: 100px;}
-    .line-left {max-width: 100%;flex: 0 0 100%;order: 2;}
-    .offer-wrapper .offer-inner span.badge {font-size: 12px;}
-    .testimonial .slider-item {
-        padding: 22px 15px 25px 15px;
-        margin: 0 10px;
-        border-radius: 20px;
-    }
-    .testimonial .slider-item .profile-title h5{
-        font-size: 16px;
-    }
-    .testimonial .slider-item .author .profile {
-        margin-right: 15px;
-    }
-    .site-logo {
-        width: 80px;
-     
-    }
-    .login-link {
-        font-size: 18px;
-    }
-    .issue-header {
-        flex-wrap: wrap;
-    }
-    .issue-header .form-control {
-        width: 100%;
-    }
-    .advertise-item-wrap {
-        padding: 0;
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-    .issue-selection-option.product-list .product-item {
-        padding: 0 20px 40px;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .modal h2 {
-        font-size: 28px;
-    }
-    .inner-issue {
-        flex-wrap: wrap;
-    }
-    .inner-wrapper .badge-outer {
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-    .inner-wrapper .badge {
-        font-size: 19px;
-    }
-    .description li {
-        font-size: 18px;
-    }
-    .description {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .inner-wrapper textarea {
-        font-size: 18px;height: 128px;
-    }
-    .inner-wrapper .policy-link a {
-        font-size: 18px;
-    }
-    .inner-wrapper .policy-link {
-        margin-bottom: 20px;
-        padding-bottom: 0;
-    }
-    .profile-wrapper {
-        margin-top: 40px;
-        PADDING: 70px 30px 50px;
-        flex-wrap: wrap;
-    }
-    .profile-wrapper .left-col {
-        display: flex;
-        align-items: center;
-        max-width: 100%;
-        flex: 0 0 100%;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .profile-wrapper .right-col {
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-    .profile-wrapper .left-col .user-detail {
-        padding-left: 0;
-        width: 100%;
-    }
-    .profile-wrapper .left-col img {
-        margin: 0 auto;
-    }
-    .edit-tabs.login-tabs.nav-tabs .nav-item .nav-link {
-        margin-bottom: 15px;
-    }
-    .profile-form {
-        padding-top: 20px;
-    }
-    .map-blk {
+@media(max-width:768px){
+    footer{
         display: none;
     }
-    #LoginModal .close span path{
-        fill: #ffffff;
+    .header {
+        padding: 15px;
+        position: fixed;
+        bottom: -1px;
+        z-index: 999;
+        background: #ffffff;
+        left: 0;
+        right: 0;
+        box-shadow: 0px -12px 56px 0px #B5B7D03B;
     }
-    .modal#LoginModal .modal-dialog{
-        max-width: 400px;
+    .wrapper-main{
+        padding-bottom: 80px;
     }
-}
-@media(max-width:480px){
-    .offer-wrapper .offer-inner ul li:before{
-        height: 20px;
-        width: 20px;
-        background-size: 100%;
+    .user-login{
+        display: block;
+        width: 40px;
+        margin: 0 auto;
     }
-    .offer-wrapper .offer-inner ul li {
-        font-size: 16px;
-        padding-left: 27px;
+    .login-link span{
+        font-size: 12px;
+        display: block;
+        padding-top: 5px;
+    }
+    .site-logo {
+        width: 60px;
+    }
+    .banner .banner-slider .slider-item {
+        border-radius: 20px;
+        margin: 0 15px;
+    }
+    .banner{
+        padding: 15px 0 30px;
+    }
+    .banner-slider .slider-item {
+        min-height: 230px;
+    }
+    .slick-dots li, .slick-dots li button{
+        width: 8px;
+        height: 8px;
+        background: #2F695D;
+    }
+    .slick-dots li.slick-active, .slick-dots li.slick-active button {
+        width: 30px;
+    }
+    .slick-dots {
+        bottom: -20px;
+    }
+    .want-to-repair {
+        padding: 40px 0 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .product-list .img-wrapper {
+        height: 80px;
+        width: 80px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .product-item {
+        padding: 0 10px 30px;
+    }
+    .product-list h3 {
+        font-size: 13px;
+    }
+    .go-green{
+        padding: 30px 0;
+    }
+    .filter-wrapper.nav-tabs .nav-link {
+        font-size: 13px;
+        margin: 0;
+        padding: 5px 10px;
+    }
+    .filter-wrapper{
+        padding-bottom: 15px;
+    }
+    .filter-wrapper::-webkit-scrollbar{
+        height: 5px;
+    }
+    .offer-wrapper .offer-inner{
+        border-radius: 0;
+        border: none !important;
     }
     .offer-wrapper .offer-inner-wrapper{
         padding: 0 10px;
@@ -510,33 +374,211 @@
     .offer-wrapper {
         margin: 0 -10px;
     }
-    .offer-wrapper .offer-inner {
-        padding: 15px;
-        border-radius: 20px;
+    .offer-wrapper .slick-list{
+        border-radius: 15px;
+        box-shadow: 0px 12px 56px 0px #B5B7D03B;
+        background: #FFF;
     }
-    .offer-wrapper .premium.offer-inner-wrapper .offer-inner{
-        padding: 40px 15px 15px;
-    }
-    .offer-wrapper .offer-inner span.badge{
-        padding: 5px 10px;
-        right: 10px;
-        top: 10px;
-        font-size: 10px;
+    .offer-wrapper .offer-inner h2 {
+        font-size: 28px;
+        padding-bottom: 10px;
     }
     .offer-wrapper .offer-inner .price {
-        font-size: 46px;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .offer-wrapper .offer-inner .price span, .offer-wrapper .offer-inner .price sub {
+        font-size: 40px;
+        bottom: 0;
+    }
+    .offer-wrapper .offer-inner ul {
+        padding: 20px 0;
+    }
+    .offer-wrapper .offer-inner {
+        padding: 25px 10px;
+    }
+    .offer-wrapper .premium.offer-inner-wrapper .offer-inner {
+        padding: 25px 10px ;
+    }
+    .offer-wrapper .offer-inner ul li:before{
+        width: 20px;
+        height: 20px;
+        /* top: 0; */
+    }
+    .offer-wrapper .offer-inner ul li{
+        padding-left: 30px;
+        font-size: 14px;
+    }
+    .offer-wrapper .offer-inner ul li:not(:last-child) {
+        margin-bottom: 15px;
     }
     .btn {
         padding: 10px 15px;
     }
     .btn span {
-        font-size: 20px;
+        font-size: 16px;
     }
-    footer .wrapper .left,
-    footer .wrapper .center{flex: 0 0 50%;max-width: 50%;}
-    footer .wrapper .right{flex: 0 0 100%;max-width: 100%;}
-    footer .wrapper .right {
-        margin: 20px 0;
+    .offer-wrapper .offer-inner span.badge{
+        font-size: 12px;
+        right: 10px;
+        top: 10px;
     }
-    
+    .book-with-us{
+        padding: 30px 0;
+    }
+    .book-with-us .wrapper .right{
+        position: absolute;
+        z-index: -3;
+        opacity: 0.1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        width: 160vw;
+        max-width: max-content;
+    }
+    .book-with-us .wrapper .left{
+        padding-left: 20px;
+    }
+    .book-with-us .wrapper .left .title h2 {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    .book-with-us .wrapper .left .text-blk p {
+        font-size: 13px;
+    }
+    .book-with-us .wrapper .right,
+    .book-with-us .wrapper .left{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .book-with-us .wrapper .left .title h2:before{
+        left: -20px;
+        top: 5px;
+    }
+    .book-with-us .book-item {
+        margin-bottom: 15px;
+    }
+    .testimonial, .issue-selction-wrapper{
+        padding: 5px 0 30px;
+    }
+    .testimonial .head-blk .quote-img{
+        left: 28%;
+        height: 52px;
+    }
+    .testimonial .head-blk{
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+    .testimonial .slider-item{
+        padding: 15px;
+        margin: 0 10px;
+        border-radius: 15px;
+    }
+    .testimonial-slider{
+        padding-top: 20px;
+    }
+    .testimonial .slider-item .profile-title h5{
+        font-size: 16px;
+    }
+    .testimonial .slider-item .content p {
+        font-size: 13px;
+    }
+    .profile {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+    .testimonial .slider-item .author .profile-title img{
+        width: 70px;
+    }
+    .testimonial-slider{
+        padding-bottom: 20px;
+    }
+    .testimonial-slider .slick-dots{
+        bottom: 0;
+    }
+    #LoginModal .modal-wrapper{
+        background-size: 47%;
+    }
+    .mobile-screen{
+        display: block !important;
+    }
+    .desktop-screen{
+        display: none !important;
+    }
+    .navigation-items {
+        align-items: flex-end;
+        /* border-left: 2px dotted #2F695D; */
+        padding-left: 7px;
+    }
+}
+@media(max-width:575px) {
+    #LoginModal .login-wrapper {
+        margin: 0;
+        padding: 15px;
+        border-radius: 15px;
+        max-width: 100%;
+        justify-content: center;
+    }
+    #LoginModal .modal-body {
+        padding: 0;
+    }
+    #LoginModal .modal-content {
+        padding: 0;
+        margin: 0 30px;
+        background: #23957D;
+    }
+    #LoginModal .close svg path{
+        fill: #ffffff;
+    }
+    .modal .close{
+        top: 10px;
+        right: 10px;
+    }
+    .modal-content {
+        border-radius: 0;
+    }
+    .login-inner p{
+        font-size: 13px;
+        text-align: center;
+    }
+    .login-inner .form-control, .login-inner .form-group span {
+        font-size: 18px;
+    }
+    .login-inner .form-control{
+        padding: 10px 20px 10px 50px;
+    }
+    .modal-content{
+        margin: 0 !important;
+        height: 100vh;
+        border: none;
+    }
+    .modal .modal-dialog,
+    .modal-open .modal{
+        margin: 0;
+        padding: 0 !important;
+    }
+    .login-wrapper h2{
+        text-align: center;
+    }
+    .product-list .img-wrapper{
+        border-radius: 10px;
+    }
+    .product-item{
+        padding: 0 7px 20px;
+    }
+    .banner-slider .slider-item {
+        min-height: 170px;
+    }
+    .user-login{
+        width: 30px;
+    }
+    .login-link span{
+        font-size: 10px;
+    }
+    .header {
+        padding: 10px 10px;
+    }
 }
