@@ -162,7 +162,7 @@ h6{
  
 .container{
     max-width: 1558px;
-    padding: 0 20px;
+    padding: 0 15px;
     overflow: hidden;
 }
 /* Header Css */
@@ -262,10 +262,11 @@ h6{
     height: auto;
     /* display: block; */
 }
-.product-list.slick-dotted.slick-slider{
-    /* display: flex;
-    align-items: center; */
+.product-list{
+    display: flex;
+    align-items: center;
     margin: 0 -20px;
+    flex-wrap: wrap;
     cursor: pointer;
 }
 .mobile-screen{
@@ -335,6 +336,13 @@ h6{
     color: #3E3E3E;
     white-space: nowrap;
     overflow: hidden;
+}
+.filter-wrapper::-webkit-scrollbar-track{opacity: 0; visibility: hidden;}
+.filter-wrapper::-webkit-scrollbar-thumb{opacity: 0; visibility: hidden;}
+.filter-wrapper::-webkit-scrollbar{
+    opacity: 0;
+    visibility: hidden;
+    background: #000;
 }
 .offer-wrapper{
     /* display: flex;
@@ -512,7 +520,7 @@ h6{
 .book-with-us .book-item:last-child{margin-bottom: 0;}
 
 /* Testimonial section */
-.testimonial{padding: 10px 0;}
+.testimonial{padding: 30px 0 50px;}
 .testimonial .head-blk{text-align:center;margin-bottom: 56px;position: relative; margin-top: 60px;}
 .testimonial .head-blk h2{color: #2F695D;position: relative;z-index: 2;padding-bottom: 0;display:inline-block}
 .testimonial .head-blk .quote-img{
@@ -538,6 +546,7 @@ h6{
 
 /* Footer section */
 footer {background-color: #3E3E3E;padding: 117px 0 75px;}
+footer .mobile-only{display: none;}
 footer .wrapper{display: flex;justify-content: space-between;}
 footer h4{background: linear-gradient(40deg, #DADADA 0%, #FFF 101.64%);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;padding-bottom: 14px;position: relative;display: inline-block;margin-bottom: 20px;}
 footer h4:before{content:"";position: absolute;bottom: 0;width: 100%;height: 1px;background: linear-gradient(44deg, #2F695D -14.49%, #7BFFE4 125.23%);}
@@ -912,7 +921,7 @@ footer .footer-bottom .text{padding: 0 20px;}
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     color: #6F6F6F;
-    left: 15px;
+    left: 35px;
 }
 .login-inner .form-control{
     background: #FFFFFF;
@@ -922,7 +931,7 @@ footer .footer-bottom .text{padding: 0 20px;}
     line-height: 1;
     text-align: left;
     border-radius: 60px;
-    padding: 2px 20px 3px 70px;
+    padding: 2px 20px 3px 97px;
 }
 .login-inner p.privacy-policy a{
     color: #00FFCA;
@@ -1254,7 +1263,9 @@ footer .footer-bottom .text{padding: 0 20px;}
 .navigation-items a{
     margin: 0 10px;
     text-align: center;
+    display: block;
 }
+.navigation-items a span{line-height: 1.2;}
 .navigation-items a svg,
 .navigation-items a img{
     width: 25px;

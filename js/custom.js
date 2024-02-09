@@ -11,7 +11,7 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        dots: false,
+        dots: false,        
         responsive: [
           {
             breakpoint: 991,
@@ -23,9 +23,11 @@ $(function() {
           {
             breakpoint: 767,
             settings: {
+                  centerMode:true,
                   dots: true,
-                  slidesToShow: 1.2,
+                  slidesToShow: 1,
                   slidesToScroll:1,
+                  infinite:true                  
                 }
             },
             
@@ -36,39 +38,47 @@ $(function() {
         slidesToScroll: 1,
         centerMode: false,
         arrows: false,
-        
         dots: false,
         centerPadding: '20px',
         responsive: [
           {
             breakpoint: 991,
             settings: {
-              slidesToShow: 2.3,
+              slidesToShow: 2.1,
+              infinite: false,
               slidesToScroll:1
             }
           },
           {
               breakpoint: 768,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 2.1,
                 slidesToScroll:2,
-                dots: true,
+                // dots: true,
                 infinite: false,
               }
           },          
           {
-              breakpoint: 482,
+              breakpoint: 567,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 1.3,
                 slidesToScroll:1,
-                dots: true,
-                autoplay:true,
-                autoplaySpeed:3000,
-                fade: true,
-                speed: 1000,
-                infinite: true,
-                cssEase: 'ease-in-out',
-                touchThreshold: 100,
+                // dots: true,
+                // autoplay:true,
+                // autoplaySpeed:3000,
+                // fade: true,
+                // speed: 1000,
+                infinite: false,
+                // cssEase: 'ease-in-out',
+                // touchThreshold: 100,
+              }
+          },          
+          {
+              breakpoint: 475,
+              settings: {
+                slidesToShow: 1.1,
+                slidesToScroll:1,
+                infinite: false,
               }
           },          
         ]
@@ -91,38 +101,38 @@ $(function() {
         centerPadding:30,
         variableWidth: true,
     });
-    $('#desktopScreen').slick({
-        infinite: true,
-        dots: false,
-        arrows: false,
-        variableWidth: true,
-        slidesToScroll: 1,
-        // rows: 2,
-    });
-    $('#desktopScreenBrand').slick({
-        infinite: true,
-        dots: false,
-        arrows: false,
-        variableWidth: true,
-        slidesToScroll: 1,
-        // rows: 2,
-    });
-    $('#mobileScreen').slick({
-        infinite: true,
-        dots: false,
-        arrows: false,
-        variableWidth: true,
-        slidesToScroll: 1,
-        rows: 2,
-    });
-    $('#mobileScreenBrand').slick({
-        infinite: true,
-        dots: false,
-        arrows: false,
-        variableWidth: true,
-        slidesToScroll: 1,
-        rows: 2,
-    });
+    // $('#desktopScreen').slick({
+    //     infinite: true,
+    //     dots: false,
+    //     arrows: false,
+    //     variableWidth: true,
+    //     slidesToScroll: 1,
+    //     // rows: 2,
+    // });
+    // $('#desktopScreenBrand').slick({
+    //     infinite: true,
+    //     dots: false,
+    //     arrows: false,
+    //     variableWidth: true,
+    //     slidesToScroll: 1,
+    //     // rows: 2,
+    // });
+    // $('#mobileScreen').slick({
+    //     infinite: true,
+    //     dots: false,
+    //     arrows: false,
+    //     variableWidth: true,
+    //     slidesToScroll: 1,
+    //     rows: 2,
+    // });
+    // $('#mobileScreenBrand').slick({
+    //     infinite: true,
+    //     dots: false,
+    //     arrows: false,
+    //     variableWidth: true,
+    //     slidesToScroll: 1,
+    //     rows: 2,
+    // });
 
 
 
@@ -138,4 +148,20 @@ $(function() {
         $('span.selected-items').text(val).addClass('haveData');
     });
     
+    if($(window).width() < 767 ){
+      $(document).ready(function(){
+        $(".accordian-title").click(function(){
+           if($(this).hasClass("active")){
+                $(this).removeClass("active");
+                $(this).next(".accordian-content").slideUp();
+           }
+          else{
+            $(".accordian-title").removeClass("active");
+            $(".accordian-content").slideUp();
+            $(this).addClass("active");       
+            $(this).next(".accordian-content").slideDown();
+          }           
+        });
+      });
+    }
 });
