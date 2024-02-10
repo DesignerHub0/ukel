@@ -293,7 +293,7 @@
         box-shadow: 0px -12px 56px 0px #B5B7D03B;
     }
     .wrapper-main{
-        padding-top: 80px;
+        padding-top: 60px;
     }
     .user-login{
         display: block;
@@ -585,7 +585,7 @@
         padding: 0 10px 20px;
     }
     .want-to-repair{
-        padding: 30px 0 20px;
+        padding: 20px 0;
     }
     .banner-slider .slider-item {
         min-height: 170px;
@@ -594,7 +594,8 @@
         width: 30px;
     }
     .login-link span{
-        font-size: 10px;
+        font-size: 14px;
+        padding: 0;
     }
     .header {
         padding: 10px 10px;

@@ -23,11 +23,11 @@ $(function() {
           {
             breakpoint: 767,
             settings: {
-                  centerMode:true,
+                  // centerMode:true,
                   dots: true,
-                  slidesToShow: 1,
+                  slidesToShow: 1.08,
                   slidesToScroll:1,
-                  infinite:true                  
+                  // infinite:true                  
                 }
             },
             
