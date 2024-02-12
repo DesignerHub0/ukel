@@ -509,6 +509,7 @@
         padding-left: 7px;
     }
     .testimonial .container{padding: 0;}
+    footer {padding: 50px 0 30px;}
     footer .footer-top .wrapper{display: none;}
     footer .mobile-only{display: block;}
     footer .accordian:not(:last-child){margin-bottom: 20px;}
@@ -520,6 +521,10 @@
     footer .mobile-only .accordian-title{display: block;background-image: url(../images/down-arrow.png);background-position: 97%;background-size: 16px;background-repeat: no-repeat;}
     footer .mobile-only h4{display: block;font-size: 18px;}
     footer .footer-bottom .wrapper{flex-wrap: wrap;}
+    .testimonial .slider-item .content {height: 78px;}
+    footer .wrapper .line-left {display: none;}
+    .social-links {padding-left: 0;flex: 0 0 100%;max-width: 100%;}
+    .social-links ul{justify-content: center;}
 }
 
 @media(max-width:600px) {
@@ -603,6 +608,9 @@
     footer .wrapper .line-left {
         max-width: 50%;
         flex: 0 0 50%;
+    }
+    .testimonial .slider-item .content {
+        height: 78px;    
     }
 }
 @media(max-width:375px) {
