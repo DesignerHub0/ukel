@@ -33,6 +33,7 @@ $(function() {
             
           ]
     });
+    
     $('.offer-wrapper').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -101,6 +102,42 @@ $(function() {
         centerPadding:30,
         variableWidth: true,
     });
+    $('.advertise-wrap').slick({ 
+      dots: true,
+      slidesToShow: 4,
+      slidesToScroll:1,
+      arrows:false,
+      responsive:[
+        {
+          breakpoint: 991,
+          settings:{
+            dots: true,
+            slidesToShow: 2.01,
+            slidesToScroll:1,
+            arrows:false
+          }
+        },
+        {
+          breakpoint: 767,
+          settings:{
+            dots: true,
+            slidesToShow: 2.01,
+            slidesToScroll:1,
+            arrows:false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings:{
+            dots: true,
+            slidesToShow: 1.01,
+            slidesToScroll:1,
+            arrows:false
+          }
+        }
+      ]
+
+    });
     // $('#desktopScreen').slick({
     //     infinite: true,
     //     dots: false,
@@ -161,6 +198,13 @@ $(function() {
             $(this).addClass("active");       
             $(this).next(".accordian-content").slideDown();
           }           
+        });
+        $('.advertise-wrap').slick({ 
+          dots: true,
+          slidesToShow: 1.05,
+          slidesToScroll:1,
+          arrows:false
+
         });
       });
     }

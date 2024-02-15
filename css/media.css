@@ -1,513 +1,173 @@
 @media(max-width: 1480px) {
-    .product-list .img-wrapper{
-        height: 130px;
-        width: 130px;
+    .product-list .img-wrapper{height:130px;width:130px}
+    .login-link{font-size:24px}
+    .want-to-repair{padding:50px 0}
+    .header{padding:15px}
+    .site-logo{width:100px;height:auto}
+    h2{font-size:30px}
+    .filter-wrapper.nav-tabs .nav-link{font-size:20px}
+    .filter-wrapper{margin-bottom:20px}
+    .offer-wrapper .offer-inner h2{font-size:48px}
+    .offer-wrapper .offer-inner .price{font-size:80px;padding-top:0}
+    .offer-wrapper .offer-inner ul li{font-size:22px;padding-left:40px}
+    .offer-wrapper .offer-inner ul{padding:30px 0}
+    .offer-wrapper .offer-inner{padding:35px 30px}
+    .offer-wrapper .premium.offer-inner-wrapper .offer-inner{padding:60px 30px}
+    .book-with-us{padding:50px 0 0}
+    .book-with-us .wrapper .left .title h2{font-size:24px}
+    .book-with-us .wrapper .left .text-blk p{font-size:20px}
+    .testimonial{padding:30px 0 50px}
+    .issue-selction-wrapper{padding:50px 0}
+    footer{padding:50px 0}
+    footer h4{font-size:22px;margin-bottom:15px}
+    footer .footer-top li a,footer .footer-bottom p{font-size:20px}
+    footer .footer-top li:not(:last-child){padding-bottom:10px}
+    footer .footer-top{margin-bottom:50px}
+    .product-list h3{font-size:20px}
+    .product-item{padding:0 15px;text-align:center}
+    .product-list.slick-dotted.slick-slider{margin:0 -15px}
+    .btn span{font-size:24px}
+    .btn{padding:15px}
+    .testimonial .slider-item .content p{font-size:16px}
+    .issue-selection-option.product-list .product-item{padding:0 20px 40px}
+    .advertise-item p,.profile-wrapper .user-detail p,.profile-form label{font-size:22px}
+    .advertise-item span,.issue-header .form-control{font-size:20px}
+    .advertise-item span.badge,.profile-wrapper .user-detail span{font-size:18px}
+    .login-tabs.nav-tabs .nav-item .nav-link{font-size:20px}
+    .modal-content{padding:30px;margin:0 30px}
+}
+@media(max-width:1240px){
+    .advertise-item p{width: auto;}
+    .advertise-item .right {
+        flex: 0 0 38%;
+        max-width: 38%;
+        text-align: right;
     }
-    .login-link{
-        font-size: 24px;
-    }
-    .want-to-repair {
-        padding: 50px 0;
-    }
-    .header{
-        padding: 15px;
-    }
-    .site-logo{
-        width: 100px;
-        height: auto;
-    }
-    h2{
-        font-size: 30px;
-    }
-    .filter-wrapper.nav-tabs .nav-link {
-        font-size: 20px;
-    }
-    .filter-wrapper {
-        margin-bottom: 20px;
-    }
-    .offer-wrapper .offer-inner h2 {
-        font-size: 48px;
-    }
-    .offer-wrapper .offer-inner .price {
-        font-size: 80px;
-        padding-top: 0;
-    }
-    .offer-wrapper .offer-inner ul li {
-        font-size: 22px;
-        padding-left: 40px;
-    }
-    .offer-wrapper .offer-inner ul {
-        padding: 30px 0;
-    }
-    .offer-wrapper .offer-inner{
-        padding: 35px 30px;
-    }
-    .offer-wrapper .premium.offer-inner-wrapper .offer-inner{
-        padding: 60px 30px;
-    }
-    .book-with-us {
-        padding: 50px 0 0;
-    }
-    .book-with-us .wrapper .left .title h2{
-        font-size: 24px;
-    }
-    .book-with-us .wrapper .left .text-blk p {
-        font-size: 20px;
-    }
-    .testimonial{
-        padding: 30px 0 50px;
-    }
-    .issue-selction-wrapper {
-        padding: 50px 0;
-    }
-    footer{
-        padding: 50px 0;
-    }
-    footer h4{
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-    footer .footer-top li a,
-    footer .footer-bottom p{
-        font-size: 20px;
-    }
-    footer .footer-top li:not(:last-child) {
-        padding-bottom: 10px;
-    }
-    footer .footer-top {
-        margin-bottom: 50px;
-    }
-    .product-list h3{
-        font-size: 20px;
-    }
-    .product-item {
-        padding: 0 15px;
-        text-align: center;
-    }
-    .product-list.slick-dotted.slick-slider{
-        margin: 0 -15px;
-    }
-    .btn span{
-        font-size: 24px;
-    }
-    .btn {
-        padding: 15px 15px;
-    }
-    .testimonial .slider-item .content p{
-        font-size: 16px;
-    }
-    .issue-selection-option.product-list .product-item {
-        padding: 0 20px 40px;
-    }
-    .advertise-item p,
-    .profile-wrapper .user-detail p,
-    .profile-form label {
-        font-size: 22px;
-    }
-    .advertise-item span,
-    .issue-header .form-control{
-        font-size: 20px;
-    }    
-    .advertise-item span.badge,
-    .profile-wrapper .user-detail span{
-        font-size: 18px;
-    }
-    .login-tabs.nav-tabs .nav-item .nav-link{
-        font-size: 20px;
-    }
-    .modal-content{
-        padding: 30px;
-        margin: 0 30px;
+    .advertise-item {
+        align-items: center;
     }
 }
 
 @media(max-width:1199px){
-    .slick-dotted.slick-slider{
-        margin: 0;
-    }
-    .product-list .slider-item img{width: 100%;}
-    .product-list .slick-dots {
-        bottom: -20px;
-    }
-    .product-list .slick-dots li{
-        margin: 0 10px 0 0;
-    }
-    .product-list .slick-dots li button:before{
-        opacity: 1;
-        color: transparent;
-        font-size: 12px;
-
-    }
-    .product-list .slick-dots li,
-    .product-list .slick-dots li button{
-        padding: 0;
-        width: 5px;
-        height: 5px;
-        background: #2F695D;
-        border-radius: 50%;
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-    }
-    .product-list .slick-dots li.slick-active button:before{
-     color: transparent;
-    }
-    .product-list .slick-dots li.slick-active,
-    .product-list .slick-dots li.slick-active button{
-        width: 20px;
-        border-radius: 45px;
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-    }
-    .offer-wrapper .offer-inner{
-        padding: 25px 20px; 
-    }
-    .offer-wrapper .premium.offer-inner-wrapper .offer-inner{
-        padding: 60px 20px 30px; 
-    }
-    .offer-wrapper .offer-inner h2 {
-        font-size: 38px;
-    }
-    .filter-wrapper.nav-tabs .nav-link {
-        margin-bottom: 20px;
-    }
-    .offer-wrapper .offer-inner .price {
-        font-size: 60px;
-    }
-    .offer-wrapper .offer-inner .price span, .offer-wrapper .offer-inner .price sub {
-        font-size: 50px;
-    }
-    .offer-wrapper .offer-inner ul li {
-        font-size: 18px;
-    }
-    .offer-wrapper{margin: 0 -15px;}
-    .offer-wrapper .offer-inner-wrapper {
-        padding: 0 15px;
-    }
-    .login-wrapper {
-        max-width: 320px;
-        min-height: 500px;
-        align-items: center;
-     
-    }
-    .login-wrapper h2 {
-        font-size: 30px;
-      
-    }
-    .login-tabs.nav-tabs .nav-item .nav-link {
-        font-size: 16px;
-    }
-    .login-inner p {
-        padding: 15px 0;
-    }
-    .login-inner .form-control,
-    .login-inner .form-group span {
-        font-size: 22px;
-    }
-    .login-inner .form-group {
-        margin-bottom: 25px;
-    }
-    .book-with-us .wrapper .left .text-blk p {
-        font-size: 18px;
-    }
-    .profile-wrapper {
-        margin-top: 70px;
-        PADDING: 70px 30px 50px;
-    }
-    .profile-wrapper .left-col img {
-        width: 195px;
-        height: 195px;
-     
-    }
-    .profile-wrapper .left-col .user-detail {
-        padding-left: 30px;
-    }
-    .advertise-item p, .profile-wrapper .user-detail p, .profile-form label {
-        font-size: 18px;
-    }
-    .advertise-item span.badge, .profile-wrapper .user-detail span {
-        font-size: 16px;
-    }
+    .slick-dotted.slick-slider{margin:0}
+    .product-list .slider-item img{width:100%}
+    .product-list .slick-dots{bottom:-20px}
+    .product-list .slick-dots li{margin:0 10px 0 0}
+    .product-list .slick-dots li button:before{opacity:1;color:transparent;font-size:12px}
+    .product-list .slick-dots li,.product-list .slick-dots li button{padding:0;width:5px;height:5px;background:#2F695D;border-radius:50%;transition:all .3s;-webkit-transition:all .3s}
+    .product-list .slick-dots li.slick-active button:before{color:transparent}
+    .product-list .slick-dots li.slick-active,.product-list .slick-dots li.slick-active button{width:20px;border-radius:45px;transition:all .3s;-webkit-transition:all .3s}
+    .offer-wrapper .offer-inner{padding:25px 20px}
+    .offer-wrapper .premium.offer-inner-wrapper .offer-inner{padding:60px 20px 30px}
+    .offer-wrapper .offer-inner h2{font-size:38px}
+    .filter-wrapper.nav-tabs .nav-link{margin-bottom:20px}
+    .offer-wrapper .offer-inner .price{font-size:60px}
+    .offer-wrapper .offer-inner .price span,.offer-wrapper .offer-inner .price sub{font-size:50px}
+    .offer-wrapper .offer-inner ul li{font-size:18px}
+    .offer-wrapper{margin:0 -15px}
+    .offer-wrapper .offer-inner-wrapper{padding:0 15px}
+    .login-wrapper{max-width:320px;min-height:500px;align-items:center}
+    .login-wrapper h2{font-size:30px}
+    .login-tabs.nav-tabs .nav-item .nav-link{font-size:16px}
+    .login-inner p{padding:15px 0}
+    .login-inner .form-control,.login-inner .form-group span{font-size:22px}
+    .login-inner .form-group{margin-bottom:25px}
+    .book-with-us .wrapper .left .text-blk p{font-size:18px}
+    .profile-wrapper{margin-top:70px;padding:70px 30px 50px}
+    .profile-wrapper .left-col img{width:195px;height:195px}
+    .profile-wrapper .left-col .user-detail{padding-left: 0;}
+    .advertise-item p,.profile-wrapper .user-detail p,.profile-form label{font-size:18px}
+    .advertise-item span.badge,.profile-wrapper .user-detail span{font-size:16px}
     
 }
 @media(max-width:991px){
-    .offer-wrapper {
-        margin: 0 -10px;
-        flex-wrap: wrap;
-    }
-    .offer-wrapper .offer-inner-wrapper {
-        /* flex: 0 0 50%;
-        max-width: 50%; */
-        padding: 0 20px;
-        margin-bottom: 20px;
-    }
-    /* .offer-wrapper .offer-inner-wrapper.premium{
-        flex: 0 0 100%;
-        max-width: 100%;
-        order: 3;
-    } */
-    .book-with-us .book-item {
-        margin-bottom: 20px;
-    }
-    .book-with-us .wrapper .left .title h2:before {
-        top: 10px;
-    }
-    .book-with-us {
-        padding: 50px 0;
-    }
-    footer .footer-top li a, footer .footer-bottom p {
-        font-size: 16px;
-    }
-    .profile-page .product-list {
-        display: inherit;
-     
-    }
-    .issue-header .form-control {
-        width: 390px;
-    }
-    .advertise-item-wrap {
-        padding: 0 10px;
-        flex: 0 0 50%;
-        max-width: 50%;
-        margin-bottom: 20px;
-    }
-    .advertise-wrap{
-        margin: 0 -10px;
-    }
-    .map-blk {
-        width: 320px;
-    }
+    .offer-wrapper{margin:0 -10px;flex-wrap:wrap}
+    .offer-wrapper .offer-inner-wrapper{padding:0 20px;margin-bottom:20px}
+    .book-with-us .book-item{margin-bottom:20px}
+    .book-with-us .wrapper .left .title h2:before{top:10px}
+    .book-with-us{padding:50px 0}
+    footer .footer-top li a,footer .footer-bottom p{font-size:16px}
+    .profile-page .product-list{display:inherit}
+    .issue-header .form-control{width:390px}
+    /* .advertise-item-wrap{padding:0 10px;flex:0 0 50%;max-width:50%;margin-bottom:20px} */
+    /* .advertise-wrap{margin:0 -10px} */
+    .map-blk{width:320px}
+    .advertise-wrap .slick-track {width: auto;}
     
 }
 @media(max-width:768px){
     /* footer{
         display: none;
     } */
-    .header {
-        padding: 15px;
-        position: fixed;
-        top: -1px;
-        z-index: 999;
-        background: #ffffff;
-        left: 0;
-        right: 0;
-        box-shadow: 0px -12px 56px 0px #B5B7D03B;
-    }
-    .wrapper-main{
-        padding-top: 70px;
-    }
-    .user-login{
-        display: block;
-        width: 40px;
-        margin: 0 auto;
-    }
-    .login-link span{
-        font-size: 12px;
-        display: block;
-        padding-top: 5px;
-    }
-    .site-logo {
-        width: 80px;
-    }
-    .banner{
-        padding: 0 0 30px;
-    }
-    .banner-slider .slider-item {
-        min-height: 230px;
-        border-radius: 20px;
-        margin: 0 5px;
-    }
-    .slick-dots li, .slick-dots li button{
-        width: 8px;
-        height: 8px;
-        background: #2F695D;
-    }
-    .slick-dots li.slick-active, .slick-dots li.slick-active button {
-        width: 30px;
-    }
-    .slick-dots {
-        bottom: -20px;
-    }
-    .want-to-repair {
-        padding: 40px 0 10px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    .product-list .img-wrapper {
-        height: 110px;
-        width: 100%;
-        border-radius: 15px;
-        padding: 15px;
-    }
-    .product-list{
-        margin: 0 -10px;
-    }
-    .product-item {
-        padding: 0 10px 20px;
-        flex: 0 0 20%;
-        max-width: 20%;
-    }
-    .product-list h3 {
-        font-size: 13px;
-        padding-bottom: 0;
-    }
-    .go-green{
-        padding: 30px 0;
-    }
-    .filter-wrapper.nav-tabs .nav-link {
-        font-size: 13px;
-        margin: 0;
-        padding: 5px 10px;
-    }
-    .filter-wrapper::-webkit-scrollbar{
-        height: 5px;
-    }
+    .header{padding:15px;position:fixed;top:-1px;z-index:999;background:#fff;left:0;right:0;box-shadow:0 -12px 56px 0 #B5B7D03B}
+    .wrapper-main{padding-top:70px}
+    .user-login{display:block;width:40px;margin:0 auto}
+    .login-link span{font-size:12px;display:block;padding-top:5px}
+    .site-logo{width:80px}
+    .banner{padding:0 0 30px}
+    .banner-slider .slider-item{min-height:230px;border-radius:20px;margin:0 5px}
+    .slick-dots li,.slick-dots li button{width:8px;height:8px;background:#2F695D}
+    .slick-dots li.slick-active,.slick-dots li.slick-active button{width:30px}
+    .slick-dots{bottom:-20px}
+    .want-to-repair{padding:40px 0 10px}
+    h2{font-size:20px}
+    .product-list .img-wrapper{height:110px;width:100%;border-radius:15px;padding:15px}
+    .product-list{margin:0 -10px}
+    .product-item{padding:0 10px 20px;flex:0 0 20%;max-width:20%}
+    .product-list h3{font-size:13px;padding-bottom:0}
+    .go-green{padding:30px 0}
+    .filter-wrapper.nav-tabs .nav-link{font-size:13px;margin:0;padding:5px 10px}
+    .filter-wrapper::-webkit-scrollbar{height:5px}
     /* .offer-wrapper .offer-inner{
         border-radius: 0;
         border: none !important;
     } */
-    .offer-wrapper .offer-inner-wrapper{
-        padding: 0 10px;
-    }
+    .offer-wrapper .offer-inner-wrapper{padding: 0 10px;}
      /*.offer-wrapper .slick-list{
         border-radius: 15px;
         box-shadow: 0px 12px 56px 0px #B5B7D03B;
         background: #FFF;
     } */
-    .offer-wrapper .offer-inner h2 {
-        font-size: 28px;
-        padding-bottom: 10px;
-    }
-    .offer-wrapper .offer-inner .price {
-        font-size: 50px;
-        display: flex;
-        align-items: center;
-    }
-    .offer-wrapper .offer-inner .price span, .offer-wrapper .offer-inner .price sub {
-        font-size: 40px;
-        bottom: 0;
-    }
-    .offer-wrapper .offer-inner ul {
-        padding: 20px 0;
-    }
+    .offer-wrapper .offer-inner h2{font-size:28px;padding-bottom:10px}
+    .offer-wrapper .offer-inner .price{font-size:50px;display:flex;align-items:center}
+    .offer-wrapper .offer-inner .price span,.offer-wrapper .offer-inner .price sub{font-size:40px;bottom:0}
+    .offer-wrapper .offer-inner ul{padding:20px 0}
     /* .offer-wrapper .offer-inner {
         padding: 25px 10px;
     }
     .offer-wrapper .premium.offer-inner-wrapper .offer-inner {
         padding: 25px 10px ;
     } */
-    .offer-wrapper .offer-inner ul li:before{
-        width: 20px;
-        height: 20px;
-        /* top: 0; */
-    }
-    .offer-wrapper .offer-inner ul li{
-        padding-left: 30px;
-        font-size: 14px;
-    }
-    .offer-wrapper .offer-inner ul li:not(:last-child) {
-        margin-bottom: 15px;
-    }
-    .btn {
-        padding: 10px 15px;
-    }
-    .btn span {
-        font-size: 16px;
-    }
-    .offer-wrapper .offer-inner span.badge{
-        font-size: 12px;
-        right: 10px;
-        top: 10px;
-    }
-    .book-with-us{
-        padding: 30px 0;
-    }
-    .book-with-us .wrapper .right{
-        position: absolute;
-        z-index: -3;
-        opacity: 0.1;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        width: 160vw;
-        max-width: max-content;
-    }
-    .book-with-us .wrapper .left{
-        padding-left: 20px;
-    }
-    .book-with-us .wrapper .left .title h2 {
-        font-size: 16px;
-        padding-bottom: 5px;
-    }
-    .book-with-us .wrapper .left .text-blk p {
-        font-size: 13px;
-    }
-    .book-with-us .wrapper .right,
-    .book-with-us .wrapper .left{
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .book-with-us .wrapper .left .title h2:before{
-        left: -20px;
-        top: 5px;
-    }
-    .book-with-us .book-item {
-        margin-bottom: 15px;
-    }
-    .testimonial, .issue-selction-wrapper{
-        padding: 5px 0 30px;
-    }
-    .testimonial .head-blk .quote-img{
-        left: 28%;
-        height: 52px;
-    }
-    .testimonial .head-blk{
-        margin-bottom: 15px;
-        margin-top: 25px;
-    }
-    .testimonial .slider-item{
-        padding: 15px;
-        margin: 0 10px;
-        border-radius: 15px;
-    }
-    .testimonial-slider{
-        padding-top: 20px;
-    }
-    .testimonial .slider-item .profile-title h5{
-        font-size: 16px;
-    }
-    .testimonial .slider-item .content p {
-        font-size: 13px;
-    }
-    .profile {
-        width: 45px;
-        height: 45px;
-        margin-right: 15px;
-    }
-    .testimonial .slider-item .author .profile-title img{
-        width: 70px;
-    }
-    .testimonial-slider{
-        padding-bottom: 20px;
-    }
-    .testimonial-slider .slick-dots{
-        bottom: 0;
-    }
-    #LoginModal .modal-wrapper{
-        background-size: 47%;
-    }
-    .mobile-screen{
-        display: block !important;
-    }
-    .desktop-screen{
-        display: none !important;
-    }
-    .navigation-items {
-        align-items: flex-end;
-        /* border-left: 2px dotted #2F695D; */
-        padding-left: 7px;
-    }
+    .offer-wrapper .offer-inner ul li:before{width:20px;height:20px}
+    .offer-wrapper .offer-inner ul li{padding-left:30px;font-size:14px}
+    .offer-wrapper .offer-inner ul li:not(:last-child){margin-bottom:15px}
+    .btn{padding:10px 15px}
+    .btn span{font-size:16px}
+    .offer-wrapper .offer-inner span.badge{font-size:12px;right:10px;top:10px}
+    .book-with-us{padding:30px 0}
+    .book-with-us .wrapper .right{position:absolute;z-index:-3;opacity:.1;left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);width:160vw;max-width:max-content}
+    .book-with-us .wrapper .left{padding-left:20px}
+    .book-with-us .wrapper .left .title h2{font-size:16px;padding-bottom:5px}
+    .book-with-us .wrapper .left .text-blk p{font-size:13px}
+    .book-with-us .wrapper .right,.book-with-us .wrapper .left{flex:0 0 100%;max-width:100%}
+    .book-with-us .wrapper .left .title h2:before{left:-20px;top:5px}
+    .book-with-us .book-item{margin-bottom:15px}
+    .testimonial{padding:5px 0 30px}
+    .issue-selction-wrapper{padding:30px 0}
+    .testimonial .head-blk .quote-img{left:28%;height:52px}
+    .testimonial .head-blk{margin-bottom:15px;margin-top:25px}
+    .testimonial .slider-item{padding:15px;margin:0 10px;border-radius:15px}
+    .testimonial-slider{padding-top:20px}
+    .testimonial .slider-item .profile-title h5{font-size:16px}
+    .testimonial .slider-item .content p{font-size:13px}
+    .profile{width:45px;height:45px;margin-right:15px}
+    .testimonial .slider-item .author .profile-title img{width:70px}
+    .testimonial-slider{padding-bottom:20px}
+    .testimonial-slider .slick-dots{bottom:0}
+    #LoginModal .modal-wrapper{background-size:47%}
+    .mobile-screen{display:block!important}
+    .desktop-screen{display:none!important}
+    .navigation-items{align-items:flex-end;padding-left:7px}
     .testimonial .container{padding: 0;}
     footer {padding: 50px 0 30px;}
     footer .footer-top .wrapper{display: none;}
@@ -525,93 +185,82 @@
     footer .wrapper .line-left {display: none;}
     .social-links {padding-left: 0;flex: 0 0 100%;max-width: 100%;}
     .social-links ul{justify-content: center;}
+    .issue-header h2{display: none;}
+    .issue-header .form-group{flex: 0 0 100%;max-width: 100%;}
+    .issue-header .form-control {width: 100%;}
+    .issue-header {padding-bottom: 30px;}
+    .advertise-item-wrap:not(:last-child) {padding: 0 10px 0 0;}
+    .advertise-wrap {padding-bottom: 30px;margin-bottom: 20px !important;}
+    .advertise-wrap .slick-dots{bottom: 0;}
+    .issue-selection-option.product-list .product-item {padding: 0 10px 40px;}
+    .issue-selection-option.product-list .img-wrapper {min-width: 100px;height: 100px;}
+    .advertise-item span, .issue-header .form-control {font-size: 16px;}
+    #issueSolutionModal .description li {font-size: 16px;}
+    #issueSolutionModal .inner-wrapper .badge {font-size: 16px;height: auto;padding: 8px 15px;}
+    #issueSolutionModal .modal-content {padding: 20px;overflow-y: visible;}
+    #issueSolutionModal .inner-wrapper h2 {font-size: 18px;}
+    #issueSolutionModal .modal-content .modal-body{padding: 0;}
+    #issueSolutionModal .inner-issue {overflow-x: auto;}
+    #issueSolutionModal .inner-wrapper .badge-outer {margin-right: 10px;}
+    #issueSolutionModal .inner-issue::-webkit-scrollbar {display: none}
+    #issueSolutionModal .description {padding-top: 20px;padding-bottom: 20px;}
+    #issueSolutionModal .inner-wrapper textarea {font-size: 16px;height: 98px;}
+    #issueSolutionModal .selected-items {font-size: 16px;}
+    #issueSolutionModal .inner-wrapper .policy-link a {font-size: 16px;}
+    #issueSolutionModal .inner-wrapper .policy-link {margin-bottom: 20px;}
+    #issueSolutionModal h2 {font-size: 26px;}
+    .btn.btn-fill {padding: 12px 30px;}
+    .profile-wrapper {flex-wrap: wrap;margin-top: 30px;margin-bottom: 30px;}
+    .profile-wrapper .right-col {max-width: 100%;flex: 0 0 100%;}
+    .profile-wrapper .left-col {max-width: 100%;flex: 0 0 100%;flex-wrap: wrap;/* justify-content: center; */flex-direction: column;text-align: left;align-items: flex-start;}
+    .profile-wrapper .left-col img {width: 165px;height: 165px;margin-bottom: 30px;}
+    #editModal .modal-body{padding: 0;}
+    #editModal .modal-content {padding: 20px;margin: 0 30px;overflow-y: auto;}
+    #editModal .profile-form {padding-top: 0}
+    #editModal .advertise-item p, #editModal .profile-wrapper .user-detail p,#editModal .profile-form label {font-size: 16px;}
+    #editModal .profile-form .form-control{font-size: 16px;margin-bottom: 20px;}
+    #editModal .select-gender {margin-bottom: 0;font-size: 16px;}
+    #editModal .map-blk {width: 320px;position: static;height: 254px;}
+    #editModal #Address>.row{flex-direction: column-reverse;}
+    #editModal .edit-tabs.login-tabs.nav-tabs {margin-bottom: 20px;}
+    .gray-box h2 {font-size: 22px;}
+    .gray-box {min-height: 170px;}
+    .profile-wrapper .edit-btn {font-size: 16px;}
+    #editModal .login-tabs.nav-tabs .nav-item .nav-link {font-size: 12px;}
+    #editModal .close {
+        top: -10px;
+        right: -10px;
+    }
 }
 
 @media(max-width:600px) {
-    #LoginModal .login-wrapper {
-        margin: 0;
-        padding: 15px;
-        border-radius: 15px;
-        max-width: 100%;
-        justify-content: center;
-    }
-    #LoginModal .modal-body {
-        padding: 0;
-    }
-    #LoginModal .modal-content {
-        padding: 0;
-        margin: 0 30px;
-        background: #23957D;
-    }
-    #LoginModal .close svg path{
-        fill: #ffffff;
-    }
-    .modal .close{
-        top: 10px;
-        right: 10px;
-    }
-    .modal-content {
-        border-radius: 0;
-    }
-    .login-inner p{
-        font-size: 13px;
-        text-align: center;
-    }
-    .login-inner .form-control, .login-inner .form-group span {
-        font-size: 18px;
-    }
-    .login-inner .form-group span {left: 45px;top: 48%;}
-    .login-inner .form-control{
-        padding: 10px 20px 10px 90px;
-    }
-    .modal-content{
-        margin: 0 !important;
-        height: 100vh;
-        border: none;
-    }
-    .modal .modal-dialog,
-    .modal-open .modal{
-        margin: 0;
-        padding: 0 !important;
-    }
-    .login-wrapper h2{
-        text-align: center;
-    }
-    .product-list .img-wrapper{
-        /* border-radius: 10px; */
-        height: 100px;
-    }
-    .product-list{
-        margin: 0 -10px;
-    }
-    .product-item{
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-        padding: 0 10px 20px;
-    }
-    .want-to-repair{
-        padding: 20px 0;
-    }
-    .banner-slider .slider-item {
-        min-height: 170px;
-    }
-    .user-login{
-        width: 30px;
-    }
-    .login-link span{
-        font-size: 14px;
-        padding: 0;
-    }
-    .header {
-        padding: 10px 10px;
-    }
-    footer .wrapper .line-left {
-        max-width: 50%;
-        flex: 0 0 50%;
-    }
-    .testimonial .slider-item .content {
-        height: 78px;    
-    }
+    #LoginModal .login-wrapper{margin:0;padding:15px;border-radius:15px;max-width:100%;justify-content:center}
+    #LoginModal .modal-body{padding:0}
+    #LoginModal .modal-content{padding:0;margin:0 30px;background:#23957D}
+    #LoginModal .close svg path{fill:#fff}
+    
+    .modal .close{top:10px;right:10px}
+    .modal-content{border-radius:0}
+    .login-inner p{font-size:13px;text-align:center}
+    .login-inner .form-control,.login-inner .form-group span{font-size:18px}
+    .login-inner .form-group span{left:45px;top:48%}
+    .login-inner .form-control{padding:10px 20px 10px 90px}
+    .modal-content{margin:0!important;height:100vh;border:none}
+    .modal .modal-dialog,.modal-open .modal{margin:0;padding:0!important}
+    .login-wrapper h2{text-align:center}
+    .product-list .img-wrapper{height:100px}
+    .product-list{margin:0 -10px}
+    .product-item{flex:0 0 33.333%;max-width:33.333%;padding:0 10px 20px}
+    .want-to-repair{padding:20px 0}
+    .banner-slider .slider-item{min-height:170px}
+    .user-login{width:30px}
+    .login-link span{font-size:14px;padding:0}
+    .header{padding:10px}
+    footer .wrapper .line-left{max-width:50%;flex:0 0 50%}
+    .testimonial .slider-item .content{height:78px}
+    .advertise-item .right {flex: 0 0 28%;max-width: 28%;}
+    .advertise-item .left {flex: 0 0 68%;max-width: 68%;}
+   
 }
 @media(max-width:375px) {
     .product-list .img-wrapper{
@@ -621,5 +270,9 @@
     footer .wrapper .line-left {
         max-width: 40%;
         flex: 0 0 40%;
+    }
+    .issue-selection-option.product-list .img-wrapper {
+        min-width: 80px;
+        height: 80px;
     }
 }
