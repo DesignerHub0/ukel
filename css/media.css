@@ -200,7 +200,6 @@
     #issueSolutionModal .modal-content {padding: 20px;overflow-y: visible;}
     #issueSolutionModal .inner-wrapper h2 {font-size: 18px;}
     #issueSolutionModal .modal-content .modal-body{padding: 0;}
-    #issueSolutionModal .inner-issue {overflow-x: auto;}
     #issueSolutionModal .inner-wrapper .badge-outer {margin-right: 10px;}
     #issueSolutionModal .inner-issue::-webkit-scrollbar {display: none}
     #issueSolutionModal .description {padding-top: 20px;padding-bottom: 20px;}

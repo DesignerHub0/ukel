@@ -600,7 +600,8 @@ footer .footer-bottom .text{padding: 0 20px;}
     font-weight: 500;
     line-height: 1.2;
     width: 650px;
-    padding: 13px 65px 13px 15px;
+    padding: 13px 65px 13px 20px;
+    background-size: 20px;
     max-width: 100%;
     background-image: url(../images/ic_search.svg);
     background-repeat: no-repeat;
@@ -726,11 +727,13 @@ footer .footer-bottom .text{padding: 0 20px;}
 .inner-issue{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .inner-wrapper .badge-outer{
     position: relative;
     padding: 0;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 .inner-wrapper .badge-outer .form-control{
     position: absolute;
