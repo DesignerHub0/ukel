@@ -264,7 +264,7 @@ h6{
 }
 .product-list{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 -20px;
     flex-wrap: wrap;
     cursor: pointer;
@@ -287,7 +287,11 @@ h6{
     border-radius: 30px;
     padding: 18px;
     display: inline-block;
+    transition: all 0.5s;
 }
+/* .product-item:hover .img-wrapper{
+    background-color: #2F695D;
+} */
 .product-list .img-wrapper img{
     /* width: 100%; */
     object-fit: contain;
@@ -322,8 +326,11 @@ h6{
 .filter-wrapper li{
     padding: 0 7px;
 }
-.filter-wrapper.nav-tabs .nav-link.active{
+.filter-wrapper.nav-tabs .nav-link.active,
+.filter-wrapper.nav-tabs .nav-link:hover{
     border: 2px solid #2F695D;
+    background-color: #2F695D;
+    color: #FFF;
 }
 .filter-wrapper.nav-tabs .nav-link{
     border-radius: 100px;
@@ -587,6 +594,7 @@ footer .footer-bottom .text{padding: 0 20px;}
     justify-content: space-between;
     padding-bottom: 40px;
 }
+.issue-header h2{padding-bottom: 0;}
 .issue-header .form-group{
     padding: 0;
     margin: 0;
@@ -607,9 +615,9 @@ footer .footer-bottom .text{padding: 0 20px;}
     background-repeat: no-repeat;
     background-position: 96% center;
 }
-.advertise-wrap{
+.slick-dotted.slick-slider.advertise-wrap{
     padding-bottom: 40px;
-    /* margin: 0 -20px; */
+    margin: 0 -10px;
     /* display: flex;
     flex-wrap: wrap; */
 }
@@ -622,8 +630,8 @@ footer .footer-bottom .text{padding: 0 20px;}
     width: 100%;
     justify-content: space-between;
 }
-.advertise-item-wrap:not(:last-child){
-    padding: 0 20px 0 0;
+.advertise-item-wrap{
+    padding: 0 10px 0 10px !important;
     /* flex: 0 0 25%;
     max-width: 25%; */
 }
@@ -668,7 +676,7 @@ footer .footer-bottom .text{padding: 0 20px;}
     margin-top: 5px;
 }
 .issue-selection-option.product-list .product-item{
-    padding: 0 20px 60px;
+    padding: 0 20px 40px;
     max-width: 190px;
     position: relative;
 }
@@ -688,6 +696,7 @@ footer .footer-bottom .text{padding: 0 20px;}
 }
 .issue-selection-option.product-list{
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .issue-selection-option.product-list .img-wrapper{
     min-width: 150px;
@@ -697,8 +706,8 @@ footer .footer-bottom .text{padding: 0 20px;}
 .modal .close{
     opacity: 1;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     z-index: 99;
 }
 .modal-content{
@@ -707,12 +716,12 @@ footer .footer-bottom .text{padding: 0 20px;}
     overflow: hidden;
 }
 .modal .modal-dialog{
-    max-width: 1000px;
+    max-width: 1050px;
 }
-.close:focus, .close:hover{
+/* .close:focus, .close:hover{
     opacity: 1;
     outline: none;
-}
+} */
 .modal h2{
     font-family: 'Open Sans';
     font-size: 30px;
@@ -865,16 +874,16 @@ footer .footer-bottom .text{padding: 0 20px;}
     justify-content: flex-end;
     background-position: left center;
 }
+#LoginModal .modal-body{padding: 0;}
 .login-wrapper{
     max-width: 410px;
     width: 100%;
     background-color: #23957D;
     padding: 30px;
     border-radius: 30px;
-    min-height: 570px;
+    min-height: 630px;
     display: flex;
     align-items: flex-end;
-    margin-top: 20px;
 }
 .login-wrapper h2{
     background: linear-gradient(92.51deg, #00FFC9 1.24%, #CDFAF0 98.46%);
@@ -890,7 +899,7 @@ footer .footer-bottom .text{padding: 0 20px;}
 .login-tabs.nav-tabs{
     background: #EBEBEB;
     border: none;
-    border-radius: 0;
+    border-radius: 50px;
     overflow: hidden;
     padding: 3px;
 }
