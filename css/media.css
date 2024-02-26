@@ -189,7 +189,7 @@
     .issue-header .form-group{flex: 0 0 100%;max-width: 100%;}
     .issue-header .form-control {width: 100%;}
     .issue-header {padding-bottom: 30px;}
-    .advertise-item-wrap:not(:last-child) {padding: 0 10px 0 0;}
+    .advertise-item-wrap:not(:last-child) {padding: 0 10px 0 3px;}
     .advertise-wrap {padding-bottom: 30px;margin-bottom: 20px !important;}
     .advertise-wrap .slick-dots{bottom: 0;}
     .issue-selection-option.product-list .product-item {padding: 0 10px 40px;}
