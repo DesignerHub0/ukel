@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/media.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
 </head>
-<body>
+<body class="issue-selection">
     <div class="wrapper-main">
         <header class="header">
             <div class="container">
@@ -214,8 +214,52 @@
                     </div>
                     <a href="#" class="btn btn-fill"><span>Don’t Know ?</span></a>
                     </div>
+                    <div class="floating-ticket" style="display: none;">                        
+                        <div class="wrapper row">
+                            <div class="left col-md-6">
+                                <div class="leftInner row">
+                                    <div class="ticket">
+                                        <div class="ticket-img">
+                                            <img src="images/ticket.png">
+                                        </div>
+                                        <div class="ticket-info">
+                                            <span>Ticket No.</span>
+                                            <h2>UT2401010002</h2>
+                                        </div>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-img">
+                                            <img src="images/pickup.png">
+                                        </div>
+                                        <div class="status-info">
+                                            <span>Status</span>
+                                            <h2>Picked Up</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-md-6">
+                                <div class="rightInner row">
+                                    <div class="chat">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Type your message here">
+                                        </div>
+                                        <div class="submit">
+                                            <input type="submit" name="submit" value="">
+                                        </div>
+                                    </div>
+                                    <div class="chat-support">
+                                        <a href="#">
+                                            <img src="images/chat-support.png">
+                                        </a>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
+            
 
             <div class="modal fade bd-example-modal-lg" id="issueSolutionModal" tabindex="-1" role="dialog" aria-labelledby="issueSolutionModalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
