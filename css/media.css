@@ -2,7 +2,7 @@
     .product-list .img-wrapper{height:130px;width:130px}
     .login-link{font-size:24px}
     .want-to-repair{padding:50px 0}
-    .header{padding:15px}
+    .header{padding:15px 0}
     .site-logo{width:100px;height:auto}
     h2{font-size:30px}
     .filter-wrapper.nav-tabs .nav-link{font-size:20px}
@@ -101,11 +101,11 @@
     .advertise-wrap .slick-track {width: auto;}
     .payment-summary .promo-code .form-control {padding: 20px 95px 20px 65px;font-size: 22px;}
 }
-@media(max-width:768px){
+@media(max-width:767px){
     /* footer{
         display: none;
     } */
-    .header{padding:15px;position:fixed;top:-1px;z-index:999;background:#fff;left:0;right:0;box-shadow:0 -12px 56px 0 #B5B7D03B}
+    .header{padding:15px 0;position:fixed;top:-1px;z-index:999;background:#fff;left:0;right:0;box-shadow:0 -12px 56px 0 #B5B7D03B}
     .wrapper-main{padding-top:70px}
     .user-login{display:block;width:40px;margin:0 auto}
     .login-link span{font-size:12px;display:block;padding-top:5px}
@@ -233,22 +233,36 @@
     .profile-wrapper .edit-btn {font-size: 16px;}
     #editModal .login-tabs.nav-tabs .nav-item .nav-link {font-size: 12px;}
     #editModal .close {top: -10px;right: -10px;}
-    .summary-img img{min-width: 100px;height: 100px;}
-    .payment-page .wrapper-main{padding-top: 90px;}
-    .payment-summary .gray-box{border-radius: 20px;padding: 38px 20px 48px 30px;}
-    .summary-item-inner{align-items: flex-start !important;}
-    .summary-item-inner .col-sm-6{flex: 0 0 60%;max-width: 60%;order: 2;margin-top: 0;}
-    .summary-item-inner .col-sm-3{flex: 0 0 20%;max-width: 20%;}
-    .summary-item-inner .col-sm-3:nth-of-type(1){order: 1;}
-    .summary-item-inner .col-sm-3:nth-of-type(3){order: 3;}
-    .payment-summary .summary {padding-right: 40px;}
+    /* .summary-img img{min-width: 100px;height: 100px;} */
+    .payment-page .wrapper-main{padding-top: 74px;}
+    .payment-summary .gray-box{border-radius: 0px;padding: 38px 20px 48px 30px;}
+    .summary-item-inner{align-items: flex-start !important;flex-wrap: nowrap;margin: 0;}
+    .summary-item-inner .col-sm-6{flex: calc(100% - 55px);max-width: calc(100% - 55px);order: 2;margin-top: 0;} 
+    .summary-item-inner .col-sm-3{flex: inherit;max-width: inherit;}
+    .summary-item-inner .col-sm-3:nth-of-type(1){order: 1;height: 60px;flex: 0 0 60px;padding: 0;}    
+    .summary-item-inner .col-sm-3:nth-of-type(3){order: 3;flex:0 0 55px;max-width: 55px;padding:0}
+    .payment-summary .summary-text .title h6{font-size: 16px;}
+    .payment-summary .summary-text .issue-text p {font-size: 15px;padding-bottom: 10px;}
+    .payment-summary .summary-text .price p {font-size: 14px;}
+    .payment-summary .delete-icon .icon {width: 35px;height: 38px;margin: 0 auto;}
+    .payment-summary .delete-icon .icon a{text-align: center;}
+    .payment-summary .delete-icon .icon a img{max-width: 60%;}
+    .payment-summary .summary {padding-right: 0;height: 337px;}
     .device-pickup .col-sm-6{flex: 0 0 100%;max-width: 100%;}
-    .summary-img img {min-width: 80px;height: 80px;}
+    .summary-img img {min-width: 100%;height: 100%;}
     .address-box-detail {font-size: 15px;padding: 30px 0px 0;}
     .payment-summary .right-col h2 {font-size: 22px;}
     .payment-summary .promo-code .form-control {padding: 20px 85px;}
     .payment-summary .container{padding: 0;}
-    .payment-summary .right-col{padding: 50px 15px ;}
+    .payment-summary .right-col{padding: 30px 15px ;}
+    .payment-summary .delete-icon #edit{display:block}
+    .payment-summary .title a{display: none;}
+    .payment-summary .gray-box .summary-wrapper::after{display: none;}
+    .total-checkout li span {font-size: 15px;}
+    .total-checkout li p {flex: 0 0 60%;max-width: 60%;}
+    .total-checkout li span.price {flex: 0 0 40%;max-width: 40%;text-align: right;font-size: 15px;}
+    .total-checkout li span sub{display: block;padding-left: 0;padding-bottom: 8px;}
+    .total-checkout li:last-child span {font-size: 20px !important;}
 }
 
 @media(max-width:600px) {
@@ -273,32 +287,31 @@
     .banner-slider .slider-item{min-height:170px}
     .user-login{width:30px}
     .login-link span{font-size:14px;padding:0}
-    .header{padding:10px}
+    .header{padding:10px 0}
     footer .wrapper .line-left{max-width:50%;flex:0 0 50%}
     .testimonial .slider-item .content{height:78px}
     .advertise-item .right {flex: 0 0 28%;max-width: 28%;}
     .advertise-item .left {flex: 0 0 68%;max-width: 68%;}
-    .summary-item-inner .col-sm-6{flex: 0 0 100%;max-width: 100%;order: 3;margin-top: 30px;}
+    /* .summary-item-inner .col-sm-6{flex: 0 0 100%;max-width: 100%;order: 3;margin-top: 30px;}
     .summary-item-inner .col-sm-3{flex: 0 0 50%;max-width: 50%;}
     .summary-item-inner .col-sm-3:nth-of-type(1){order: 1;}
-    .summary-item-inner .col-sm-3:nth-of-type(3){order: 2;}
-    .payment-summary .summary {padding-right: 40px;}
+    .summary-item-inner .col-sm-3:nth-of-type(3){order: 2;} */
+    /* .summary-item-inner .col-sm-6{flex: 0 0 73%;max-width: 73%;} */
+    /* .payment-summary .summary {padding-right: 40px;} */
     .device-pickup .col-sm-6{flex: 0 0 100%;max-width: 100%;}
-    .summary-img img {min-width: 100px;height: 100px;}
-    .payment-summary .delete-icon .icon {width: 45px;height: 48px;}
+    /* .summary-img img {min-width: 100px;height: 100px;} */
+    /* .payment-summary .delete-icon .icon {width: 45px;height: 48px;}
     .payment-summary .delete-icon .icon a{margin: 0 auto;text-align: center;}
-    .payment-summary .delete-icon .icon a img{max-width: 70%;}
+    .payment-summary .delete-icon .icon a img{max-width: 70%;} */
     .payment-summary .promo-code .form-control {font-size: 15px;background-size: 27px 25px;padding: 15px 85px 15px 55px;background-position: 14px center;}
     .payment-summary .promo-code .apply-link {font-size: 15px;}
-    .total-checkout li:last-child span {font-size: 22px !important;}
-    .payment-summary .gray-box {padding: 30px 10px 40px 20px;}
-    .payment-summary .summary {padding-right: 20px;}
+   
+    .payment-summary .gray-box {padding: 30px 10px 20px 20px;}
+    .payment-summary .summary {padding-right: 0px;}
     .payment-summary .summary-wrapper {padding-bottom: 30px;}
     .payment-summary .gray-box .summary-wrapper::after {height: 74px;}
-    .total-checkout li span {font-size: 15px;}
-    .total-checkout li p {flex: 0 0 60%;max-width: 60%;}
-    .total-checkout li span.price {flex: 0 0 40%;max-width: 40%;text-align: right;font-size: 15px;}
-    .total-checkout li span sub{display: block;padding-left: 0;padding-bottom: 8px;}
+   
+    .payment-summary .summary-text .title {margin-bottom: 8px;}
 }
 /* @media(max-width:480px){
     .summary-item-inner{align-items: flex-start !important;}
