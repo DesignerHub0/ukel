@@ -29,6 +29,8 @@ h6{font-family:"Basis Grotesque Arabic Pro Blk";font-size:20px;font-weight:900;l
 
 /*Header CSS*/
 .header{padding:20px 0;box-shadow:rgba(0,0,0,0.25) 0 4px 4px 0;z-index:9}
+.header .row{margin:0;}
+.header .container{padding: 0 20px;}
 .header .header-wrapper{display:flex;align-items:center;justify-content:space-between}
 .user-login{display:none}
 .site-logo{height:50px;width:auto}
